@@ -8,6 +8,10 @@
     --card-background: #ffffff; /* Fondo blanco para las tarjetas de contenido */
     --light-grey: #e9ecef;
     --border-color: #cce7ee; /* Un borde más suave */
+    --form-border: #adb5bd; /* Borde para campos de formulario */
+    --focus-border: #007bff; /* Borde al enfocar campo */
+    --button-bg: #007bff; /* Fondo para botones */
+    --button-hover-bg: #0056b3; /* Fondo para botones al pasar el ratón */
     --font-family-primary: 'Roboto', sans-serif; /* Fuente moderna */
     --font-family-secondary: 'Montserrat', sans-serif; /* Fuente para títulos */
 }
@@ -91,7 +95,7 @@ p {
     line-height: 1.7; /* Mayor espacio entre líneas para legibilidad */
 }
 
-/* Listas */
+/* Listas (para Responsables del Proyecto) */
 ul {
     list-style-type: none; /* Remueve los puntos por defecto */
     padding: 0;
@@ -124,6 +128,106 @@ ul li::before {
     font-size: 1.2em; /* Tamaño de la flecha */
 }
 
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre grupos de formulario */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 1.05em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    padding: 12px 15px;
+    border: 1px solid var(--form-border);
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--focus-border);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+    outline: none; /* Remueve el contorno por defecto */
+}
+
+/* Estilos para radio buttons (Se realizó reunión/visita) */
+.form-group-radio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.form-group-radio label {
+    margin-bottom: 0; /* No hay margen inferior para estas etiquetas */
+    margin-right: 15px; /* Espacio entre la pregunta y los radios */
+    font-weight: 500;
+    color: var(--text-color);
+    white-space: nowrap; /* Evita que la etiqueta se rompa en varias líneas */
+}
+
+.form-group-radio input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px; /* Espacio entre el radio y su etiqueta */
+    accent-color: var(--primary-color); /* Color del radio button */
+}
+
+.form-group-radio label[for] { /* Estilo para las etiquetas "Sí" y "No" */
+    font-weight: 400; /* Menos negrita que la pregunta principal */
+    margin-right: 20px;
+}
+
+/* Separador horizontal */
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center; /* Centra el botón */
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .container {
@@ -152,6 +256,21 @@ ul li::before {
         font-size: 0.95em;
         padding: 12px 15px;
     }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="url"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+
+    .form-group-radio label {
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,5 +292,18 @@ ul li::before {
 
     p, ul li {
         font-size: 0.9em;
+    }
+
+    .form-group-radio {
+        flex-direction: column; /* Apila elementos en pantallas muy pequeñas */
+        align-items: flex-start;
+    }
+
+    .form-group-radio label {
+        margin-bottom: 5px;
+    }
+
+    .form-group-radio input[type="radio"] {
+        margin-left: 0;
     }
 }
