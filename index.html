@@ -1726,7 +1726,150 @@
         
         <hr>
 
-
+        <section>
+            <h2>Diagnóstico de Madurez Digital - Parte 1</h2>
+            <p class="instruction">Evalúe el nivel actual y deseado de madurez digital de su empresa en los siguientes ejes. Utilice "0" si el estado es desconocido o no aplica.</p>
+        
+            <div class="table-container">
+                <table class="maturity-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" style="width: 5%;">Eje</th>
+                            <th rowspan="2" style="width: 5%;">Item</th>
+                            <th rowspan="2" style="width: 8%;">Sub Eje</th>
+                            <th rowspan="2" style="width: 20%;">Descripción</th>
+                            <th rowspan="2" style="width: 8%; text-align: center;">¿Aplica a mi empresa?</th>
+                            <th rowspan="2" style="width: 30%;">Descripción de niveles</th>
+                            <th colspan="2" style="width: 14%; text-align: center;">Nivel de Madurez</th>
+                            <th rowspan="2" style="width: 10%;">Observaciones</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 7%; text-align: center;">Estado Actual</th>
+                            <th style="width: 7%; text-align: center;">Madurez Deseada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="6"><strong>Eje 1:<br>Estrategia y Enfoque Digital</strong></td>
+                            <td>1</td>
+                            <td>Estrategia de digitalización</td>
+                            <td>Estrategia de digitalización: es el plan de acción para integrar la tecnología digital en todas las áreas de la empresa con el fin de alcanzar objetivos específicos de negocio. Se trata de una hoja de ruta que especifique qué se quiere lograr, cómo se va a hacer, quiénes serán los responsables y cómo se medirá el éxito para asegurar que la inversión tecnológica impulse la competitividad y el crecimiento de la empresa.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="estrategia_digitalizacion_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Aún no hemos tratado este tema en detalle. No hay un enfoque estratégico de digitalización. La tecnología se adopta por necesidad inmediata.<br>
+                                    2 - La digitalización es conocida y discutida. Hay cierta conciencia organizacional de su relevancia, pero sin acciones claras.<br>
+                                    3 - Se conoce la digitalización, hay una estrategia con objetivos y responsables claros y un presupuesto inicial para la implementación de los proyectos identificados.<br>
+                                    4 - La estrategia de digitalización está en plena ejecución, con proyectos definidos y en marcha en varias áreas de la empresa, seguimiento periódico de los avances e integración en los planes de varios departamentos además del de sistemas/IT.<br>
+                                    5 - La estrategia de digitalización está implementada, es reconocida como un diferenciador clave en el mercado, se revisa y actualiza proactivamente, y está alineada con los objetivos de negocio a largo plazo.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="estrategia_digitalizacion_actual" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="estrategia_digitalizacion_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="estrategia_digitalizacion_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cloud Strategy</td>
+                            <td>Cloud strategy: es el plan que define cómo la organización utiliza los servicios en la nube para alcanzar sus objetivos de negocio. Implica decidir sobre qué aplicaciones, procesos y datos son más adecuados para migrar, qué modelo de nube adoptar (público, privado o híbrido) y cómo se gestionará la seguridad.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cloud_strategy_aplica"></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Aún no fue considerado. No se utilizan servicios en la nube de forma consciente o planificada.<br>
+                                    2 - Uso esporádico o no estructurado de servicios básicos en la nube sin un plan detrás (ej: cuentas de Gmail/Outlook, almacenamiento en Dropbox/Google Drive). Cada empleado o área puede usar herramientas diferentes sin una política común.<br>
+                                    3 - Se discute activamente una mayor adopción de la nube; se exploran aplicaciones específicas más allá del almacenamiento básico. Se empieza a evaluar el rendimiento, el costo-beneficio y el impacto de estas soluciones específicas.<br>
+                                    4 - Se han adoptado y estandarizado el uso de varias plataformas en la nube para procesos clave del negocio. Existen políticas y responsables definidos para gestionar la seguridad, los permisos de acceso y los costos de los servicios cloud, con una evaluación de su impacto.<br>
+                                    5 - Existe una estrategia cloud integral y documentada, alineada con la estrategia de negocio para aportar ventajas competitivas y agilidad a la empresa, con una hoja de ruta clara para la migración/adopción de servicios y gestión de la seguridad en la nube.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="cloud_strategy_actual" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="cloud_strategy_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="cloud_strategy_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Expectativas de los clientes respecto a la digitalización.</td>
+                            <td>Expectativas de los clientes con respecto a la digitalización: evalúa la capacidad de la empresa para comprender y satisfacer las nuevas expectativas de sus clientes en la era digital, tales cómo respuestas inmediatas, comunicación a través de WhatsApp o redes sociales, acceso a la información 24/7 y la conveniencia de poder comprar o gestionar servicios en línea.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="expectativas_clientes_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La empresa no ofrece canales digitales de interacción. La comunicación se basa en métodos tradicionales como teléfono o visita presencial. Se asume que los clientes no necesitan o no valoran la interacción digital.<br>
+                                    2 - Se ofrecen canales digitales básicos, principalmente para comunicación, a menudo por demanda del cliente tales como correo electrónico, WhatsApp o redes sociales para responder preguntas. El uso es principalmente para enviar información (cotizaciones, catálogos en PDF), no para que el cliente realice acciones por sí mismo.<br>
+                                    3 - Se ofrecen herramientas para que los clientes puedan realizar transacciones y gestiones por sí mismos (ej: hacer un pedido online, solicitar un presupuesto, revisar el estado de su entrega, descargar facturas). La empresa empieza a capturar datos de estas interacciones.<br>
+                                    4 - Además de la adquisición electrónica, existe una integración digital más profunda con clientes clave en áreas como diseño colaborativo de productos, planificación de la demanda, visibilidad de la producción/entrega o gestión compartida de inventarios.<br>
+                                    5 - Existe una integración digital profunda y colaborativa con los clientes en múltiples puntos de la cadena de valor, buscando la co-creación de valor y experiencias personalizadas. Se utiliza el análisis de datos compartidos para anticipar las necesidades futuras de los clientes y ofrecer soluciones proactivas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="expectativas_clientes_actual" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="expectativas_clientes_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="expectativas_clientes_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Expectativas de los proveedores hacia la digitalización.</td>
+                            <td>Integración Digital con Proveedores: capacidad de la empresa para interactuar y colaborar digitalmente con sus proveedores, integrando procesos clave como la gestión de pedidos, la facturación, el control de inventarios y la planificación de la cadena de suministro a través de plataformas digitales.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="expectativas_proveedores_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La interacción con proveedores es predominantemente manual (teléfono, email no estructurado, papel). No existe integración digital de procesos ni intercambio electrónico de datos formal, lo que genera lentitud y riesgo de errores manuales.<br>
+                                    2 - Se intercambian documentos digitales, pero los procesos siguen siendo manuales. Se envían y reciben documentos clave (órdenes de compra, facturas) en formato digital (PDF, Excel), impulsado por los requisitos de un proveedor o cliente.<br>
+                                    3 - Se utiliza una plataforma digital (ej. portal de proveedores) para centralizar y automatizar las transacciones. Los proveedores pueden gestionar pedidos, enviar facturas electrónicas y actualizar su información de forma autónoma, logrando una mejora significativa en la eficiencia, trazabilidad y reducción de errores.<br>
+                                    4 - Existe una integración digital más profunda con proveedores estratégicos en procesos operativos clave o de planificación compartiendo información en tiempo real, como niveles de inventario, pronósticos de demanda o seguimiento de entregas.<br>
+                                    5 - Existe una colaboración digital estratégica y proactiva con proveedores clave, utilizando plataformas compartidas para la co-innovación (ej. diseño conjunto de productos/componentes), la optimización de la cadena de suministro, la gestión de riesgos compartida y la mejora continua.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="expectativas_proveedores_actual" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="expectativas_proveedores_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="expectativas_proveedores_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Cultura y Liderazgo para la Transformación Digital.</td>
+                            <td>Cultura de Innovación y Adaptabilidad Digital: evalúa hasta qué punto la organización fomenta un ambiente seguro para que los empleados propongan mejoras, prueben nuevas herramientas sin miedo al fracaso, colaboren entre áreas y respondan con agilidad a los cambios tecnológicos y a las nuevas demandas del mercado. Mide si la transformación digital es vista como una oportunidad colectiva para evolucionar o como una amenaza a la forma tradicional de hacer las cosas.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cultura_liderazgo_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La cultura es tradicional y resistente a los cambios tecnológicos. Prevalece el "así se ha hecho siempre". El cambio se ve como una amenaza.<br>
+                                    2 - Hay conciencia de la necesidad de cambio, pero poca acción formal para fomentar una cultura digital. Las pocas iniciativas de innovación que surgen son individuales y a menudo se desvanecen por falta de apoyo, recursos o tiempo.<br>
+                                    3 - El liderazgo promueve activamente la capacitación y la adopción de nuevas herramientas. Se lanzan proyectos piloto o iniciativas en departamentos específicos donde se permite experimentar.<br>
+                                    4 - La innovación se convierte en un hábito apoyado por los sistemas y procesos de la empresa. La cultura organizacional apoya la innovación digital, se tolera el error como parte del aprendizaje y se recompensa la adopción de nuevas tecnologías.<br>
+                                    5 - La adaptabilidad, el aprendizaje continuo y la innovación digital son valores centrales y visibles en toda la organización, impulsados desde el liderazgo y adoptados por todos los niveles de la organización, fortaleciendo su capacidad para adaptarse rápidamente a los cambios del mercado.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="cultura_liderazgo_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="cultura_liderazgo_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="cultura_liderazgo_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Estrategias de Gestión del Cambio para la Adopción Digital.</td>
+                            <td>Gestión del cambio: analiza la capacidad de la empresa para planificar y ejecutar estrategias que acompañen al equipo humano en el proceso de transformación digital. Evalúa cómo se gestionan la incertidumbre, la resistencia al cambio y la adaptación cultural, para asegurar una implementación tecnológica efectiva y sostenida en el tiempo.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestion_cambio_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - No se considera la gestión del cambio al implementar nuevas tecnologías. No se planifican acciones para ayudar a las personas a adaptarse a las nuevas herramientas.<br>
+                                    2 - La empresa informa sobre los cambios tecnológicos de forma puntual, enfocándose en el “qué” y el “cuándo”, pero sin explicar el “por qué” ni considerar el impacto en las personas. No hay un plan para gestionar dudas o resistencias, lo que genera incertidumbre y dificulta la adopción.<br>
+                                    3 - Se comunica el cambio y se brinda una capacitación inicial sobre el uso básico de la tecnología. Aunque se explica mejor el propósito, el enfoque es puntual y el acompañamiento finaliza tras la capacitación, sin continuidad en el apoyo ni refuerzo a largo plazo.<br>
+                                    4 - La gestión del cambio se planifica como un proyecto estructurado. Se involucra activamente a los usuarios y líderes desde el inicio para recoger sus aportes y fomentar su compromiso. Se miden la adopción y la satisfacción para ajustar el proceso y asegurar una implementación efectiva.<br>
+                                    5 - La gestión del cambio es parte integral de la cultura organizacional. Se anticipan los desafíos humanos antes de cada transformación tecnológica y se aplican estrategias proactivas. Existe un ciclo continuo de soporte y mejora que garantiza el uso sostenido y eficaz de las nuevas herramientas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="gestion_cambio_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="gestion_cambio_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="gestion_cambio_observaciones"></td>
+                        </tr>
+                        <tr class="table-summary-row">
+                            <td colspan="6" style="text-align: right;"><strong>PROMEDIO Eje 1:</strong></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje1_actual" min="0" max="5" value="3" class="narrow-input" readonly></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje1_deseada" min="0" max="5" value="4" class="narrow-input" readonly></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <hr>
         
         <section class="responsibles">
             <h2>Responsables del Proyecto</h2>
