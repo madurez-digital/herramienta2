@@ -12,6 +12,8 @@
     --focus-border: #007bff; /* Borde al enfocar campo */
     --button-bg: #007bff; /* Fondo para botones */
     --button-hover-bg: #0056b3; /* Fondo para botones al pasar el ratón */
+    --table-header-bg: #f2f2f2; /* Fondo para encabezados de tabla */
+    --table-row-hover: #f8f9fa; /* Fondo para filas de tabla al pasar el ratón */
     --font-family-primary: 'Roboto', sans-serif; /* Fuente moderna */
     --font-family-secondary: 'Montserrat', sans-serif; /* Fuente para títulos */
 }
@@ -80,7 +82,7 @@ section h2 {
     font-weight: 600;
 }
 
-section h3 {
+section h3, section h4 {
     color: var(--text-color);
     font-family: var(--font-family-secondary);
     font-size: 1.5em;
@@ -89,10 +91,26 @@ section h3 {
     font-weight: 600;
 }
 
+section h4 {
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+
 p {
     margin-bottom: 18px;
     font-size: 1.15em; /* Tamaño de fuente ligeramente más grande */
     line-height: 1.7; /* Mayor espacio entre líneas para legibilidad */
+}
+
+p.instruction {
+    font-style: italic;
+    font-size: 1em;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 /* Listas (para Responsables del Proyecto) */
@@ -153,6 +171,7 @@ form {
 .form-group input[type="url"],
 .form-group input[type="number"],
 .form-group input[type="date"],
+.form-group textarea,
 .form-group select {
     padding: 12px 15px;
     border: 1px solid var(--form-border);
@@ -166,7 +185,8 @@ form {
 }
 
 .form-group input:focus,
-.form-group select:focus {
+.form-group select:focus,
+.form-group textarea:focus {
     border-color: var(--focus-border);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
     outline: none; /* Remueve el contorno por defecto */
@@ -199,6 +219,147 @@ form {
     font-weight: 400; /* Menos negrita que la pregunta principal */
     margin-right: 20px;
 }
+
+/* Estilos para fieldset y legend (para agrupar radios/checkboxes) */
+fieldset.form-group-fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset.form-group-fieldset legend {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 400; /* Menos negrita para las opciones */
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"],
+.checkbox-group input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 4px; /* Alinea el checkbox/radio con la primera línea de texto */
+    flex-shrink: 0; /* Evita que el input se encoja */
+    accent-color: var(--primary-color);
+}
+
+.checkbox-group input[type="text"] { /* Para el campo "Otra: Describa" dentro de un checkbox */
+    margin-left: 10px;
+    flex-grow: 1;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--form-border);
+}
+
+
+/* Estilos para tablas */
+.table-container {
+    overflow-x: auto; /* Permite scroll horizontal en tablas grandes en móviles */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: var(--card-background);
+}
+
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+    font-size: 0.95em;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: var(--table-header-bg);
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fcfdff; /* Ligeramente diferente para filas impares */
+}
+
+table tbody tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+table input[type="number"],
+table input[type="text"],
+table select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--form-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table input[type="radio"] {
+    margin-right: 5px;
+    accent-color: var(--primary-color);
+}
+
+/* Específicos para la tabla de comunicación interna (radio buttons inline) */
+.comunicacion-table td:nth-child(2) { /* Columna de ¿Se utiliza? */
+    white-space: nowrap; /* Evita que Sí/No se rompa */
+}
+.comunicacion-table td:nth-child(2) label {
+    margin-right: 10px; /* Espacio entre Sí/No */
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Estilos para el pie de la tabla de Estructura de la Empresa */
+table tfoot td {
+    font-weight: 600;
+    background-color: var(--light-grey);
+    border-top: 2px solid var(--primary-color);
+}
+table tfoot span {
+    display: block; /* Asegura que el span ocupe su propio espacio */
+    padding: 5px 0;
+}
+
+/* Radio buttons en línea para Digitalización de Procesos */
+.form-group-radio-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px; /* Espacio entre cada opción de radio */
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+}
+
+.form-group-radio-inline label {
+    margin-bottom: 0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.form-group-radio-inline label input[type="radio"] {
+    margin-right: 5px;
+}
+
 
 /* Separador horizontal */
 hr {
@@ -248,6 +409,10 @@ button[type="submit"]:hover {
         font-size: 1.3em;
     }
 
+    section h4 {
+        font-size: 1.1em;
+    }
+
     p {
         font-size: 1em;
     }
@@ -263,6 +428,7 @@ button[type="submit"]:hover {
     .form-group input[type="url"],
     .form-group input[type="number"],
     .form-group input[type="date"],
+    .form-group textarea,
     .form-group select {
         padding: 10px 12px;
         font-size: 0.95em;
@@ -270,6 +436,33 @@ button[type="submit"]:hover {
 
     .form-group-radio label {
         margin-right: 10px;
+    }
+
+    fieldset.form-group-fieldset legend {
+        font-size: 1.1em;
+    }
+
+    .checkbox-group label {
+        font-size: 0.95em;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+
+    .adopcion-tecnologia-table th {
+        font-size: 0.75em; /* Ajuste para encabezados de tabla complejos */
+    }
+
+    .registros-indicadores-table th {
+        font-size: 0.7em;
+    }
+
+    .form-group-radio-inline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
 
@@ -290,6 +483,10 @@ button[type="submit"]:hover {
         font-size: 1.2em;
     }
 
+    section h4 {
+        font-size: 1em;
+    }
+
     p, ul li {
         font-size: 0.9em;
     }
@@ -305,5 +502,27 @@ button[type="submit"]:hover {
 
     .form-group-radio input[type="radio"] {
         margin-left: 0;
+    }
+
+    .checkbox-group label {
+        font-size: 0.85em;
+    }
+
+    /* Tablas en móviles, forzar scroll horizontal */
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* smooth scrolling en iOS */
+    }
+
+    table {
+        min-width: 600px; /* Asegura que la tabla no sea demasiado estrecha */
+    }
+    table th, table td {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+    .registros-indicadores-table th, .adopcion-tecnologia-table th {
+        font-size: 0.65em;
     }
 }
