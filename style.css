@@ -192,6 +192,23 @@ form {
     outline: none; /* Remueve el contorno por defecto */
 }
 
+.maturity-table .maturity-description {
+    white-space: pre-wrap; /* Mantiene los saltos de línea y el espaciado original */
+    text-align: left; /* Asegura que el texto dentro del div se alinee a la izquierda */
+    font-size: 0.85em; /* Ajusta el tamaño de fuente si es necesario para que quepa bien */
+    max-height: 200px; /* Limita la altura para evitar que las celdas sean demasiado altas */
+    overflow-y: auto; /* Agrega scroll si el contenido excede la altura máxima */
+    padding: 5px; /* Pequeño padding interno */
+    border-left: 2px solid var(--primary-color); /* Una pequeña línea para destacarlo */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Opcional: Estilo para la fila de promedio */
+.maturity-table .table-summary-row td {
+    background-color: var(--secondary-background-color); /* Un color de fondo diferente para el promedio */
+    font-weight: bold;
+}
+
 /* Estilo adicional para inputs numéricos pequeños en tablas */
 table input[type="number"].narrow-input {
     width: 60px; /* Ancho fijo para números pequeños */
