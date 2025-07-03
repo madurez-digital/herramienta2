@@ -192,6 +192,25 @@ form {
     outline: none; /* Remueve el contorno por defecto */
 }
 
+/* Estilo adicional para inputs numéricos pequeños en tablas */
+table input[type="number"].narrow-input {
+    width: 60px; /* Ancho fijo para números pequeños */
+    text-align: center;
+    padding: 6px; /* Ajustar padding */
+}
+
+/* En caso de que necesites ajustar el tamaño general de los inputs en tablas, aunque ya tienes reglas generales */
+table input[type="text"],
+table input[type="number"],
+table select {
+    /* Tus estilos ya definidos aquí: */
+    /* width: 100%; */
+    /* padding: 8px; */
+    /* border: 1px solid var(--form-border); */
+    /* border-radius: 4px; */
+    /* box-sizing: border-box; */
+}
+
 /* Estilos para radio buttons (Se realizó reunión/visita) */
 .form-group-radio {
     margin-top: 10px;
