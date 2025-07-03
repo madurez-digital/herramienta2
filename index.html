@@ -2131,6 +2131,214 @@
         </section>
         
         <hr>
+
+        <section>
+            <h2>Diagnóstico de Madurez Digital - Parte 3</h2>
+            <p class="instruction">Finalice la evaluación del nivel actual y deseado de madurez digital de su empresa. Utilice "0" si el estado es desconocido o no aplica.</p>
+        
+            <div class="table-container">
+                <table class="maturity-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" style="width: 5%;">Eje</th>
+                            <th rowspan="2" style="width: 5%;">Item</th>
+                            <th rowspan="2" style="width: 8%;">Sub Eje</th>
+                            <th rowspan="2" style="width: 20%;">Descripción</th>
+                            <th rowspan="2" style="width: 8%; text-align: center;">Eje aplicable a su empresa</th>
+                            <th rowspan="2" style="width: 30%;">Descripción de niveles</th>
+                            <th colspan="2" style="width: 14%; text-align: center;">Nivel de Madurez</th>
+                            <th rowspan="2" style="width: 10%;">Observaciones</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 7%; text-align: center;">Situación Actual</th>
+                            <th style="width: 7%; text-align: center;">Situación Deseada / esperada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4"><strong>Eje 4:<br>Talento Humano</strong></td>
+                            <td>21</td>
+                            <td>Habilidades digitales de las personas</td>
+                            <td>Habilidades digitales de las personas: Este eje evalúa cómo la organización desarrolla y gestiona las competencias digitales de su personal en el marco de su estrategia de transformación digital. Considera desde la ausencia de iniciativas hasta la consolidación de una cultura digital con aprendizaje continuo, vinculada a los objetivos del negocio y la evolución tecnológica.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="habilidades_digitales_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La organización no ha identificado ni priorizado la necesidad de desarrollar habilidades digitales en su personal. No existen iniciativas ni conciencia al respecto.<br>
+                                    2 - Se reconoce la importancia de las competencias digitales, y se contempla capacitar a personas clave o áreas puntuales. Sin embargo, no existe un plan estructurado ni políticas definidas de formación.<br>
+                                    3 - Algunas personas han recibido capacitación digital básica y se están implementando programas piloto o iniciativas aisladas, generalmente dirigidas a funciones específicas o roles técnicos.<br>
+                                    4 - Se ha desplegado un programa formal de formación digital. Más del 60% del personal relevante ha sido capacitado en competencias digitales generales, y se desarrollan habilidades específicas según el rol.<br>
+                                    5 - Todo el personal relevante posee las competencias digitales requeridas para sus funciones. Existe una cultura organizacional de mejora continua, con actualización constante de las necesidades formativas alineadas a los avances tecnológicos y a la estrategia del negocio.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="habilidades_digitales_actual" min="0" max="5" value="2" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="habilidades_digitales_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="habilidades_digitales_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Entrenamiento y simulación de operadores</td>
+                            <td>Entrenamiento y simulación de operadores: Este eje analiza el grado de digitalización, realismo y efectividad en los métodos de capacitación de operadores. Evalúa la evolución desde entrenamientos informales basados en documentos hasta la implementación de entornos de simulación inmersivos y dinámicos que permiten prácticas seguras, optimización operativa y desarrollo de competencias ante escenarios complejos.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="entrenamiento_simulacion_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Entrenamiento de operadores basado exclusivamente en documentación en papel o instrucción verbal informal.<br>
+                                    2 - Entrenamiento basado en documentación escrita estandarizada (manuales, procedimientos) y pautas de calidad, pero sin herramientas interactivas.<br>
+                                    3 - Uso de material audiovisual (videos) y herramientas de simulación básicas (ej. software de simulación de HMI o procesos simples) para complementar el entrenamiento tradicional.<br>
+                                    4 - Uso de simuladores más avanzados que replican el entorno de control y los procesos productivos, permitiendo la práctica de escenarios operativos normales y de contingencia.<br>
+                                    5 - Uso de entornos de simulación inmersivos (ej. Realidad Virtual, Gemelos Digitales) que replican fielmente el entorno 3D, el control y la dinámica de los procesos (modelos avanzados), para entrenamiento, optimización y prueba de escenarios complejos.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="entrenamiento_simulacion_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="entrenamiento_simulacion_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="entrenamiento_simulacion_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Atracción y Retención de Talento con Competencias Digitales</td>
+                            <td>Atracción y Retención de Talento con Competencias Digitales: Este eje evalúa cómo la organización enfrenta el desafío de atraer y retener talento con habilidades digitales clave para su transformación. Considera la evolución desde una gestión reactiva y sin foco específico, hasta el desarrollo de una marca empleadora sólida y una cultura organizacional centrada en el crecimiento, la innovación y la conexión con el ecosistema de talento digital.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="atraccion_retencion_talento_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La empresa no dispone de estrategias específicas para atraer o retener talento digital; su contratación es reactiva y tradicional con dificultades para encontrar perfiles clave.<br>
+                                    2 - Se reconoce la dificultad para acceder a talento digital. Se realizan algunos esfuerzos aislados de atracción, pero sin un enfoque sistemático. Las estrategias de retención son genéricas y no adaptadas a perfiles digitales.<br>
+                                    3 - Existen acciones específicas para atraer perfiles digitales (por ejemplo, publicaciones en portales especializados, participación en ferias). Se inicia una preocupación por la retención, aunque con prácticas aún informales o poco sistematizadas.<br>
+                                    4 - La empresa dispone de una estrategia proactiva de atracción con una propuesta de valor al empleado para perfiles digitales. Existen programas de desarrollo profesional, beneficios específicos y acciones orientadas a la fidelización del talento.<br>
+                                    5 - La organización es reconocida como un empleador atractivo para talento digital. Se promueve una cultura que valora la innovación, el aprendizaje continuo y la retención de talento. Existen alianzas activas con universidades, comunidades tecnológicas y otros actores del ecosistema digital.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="atraccion_retencion_talento_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="atraccion_retencion_talento_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="atraccion_retencion_talento_observaciones"></td>
+                        </tr>
+                        <tr class="table-summary-row">
+                            <td colspan="6" style="text-align: right;"><strong>PROMEDIO Eje 4:</strong></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje4_actual" min="0" max="5" value="3" class="narrow-input" readonly></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje4_deseada" min="0" max="5" value="4" class="narrow-input" readonly></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td rowspan="7"><strong>Eje 5:<br>Gestión de Activos, Seguridad y Sostenibilidad Operacional</strong></td>
+                            <td>24</td>
+                            <td>Herramientas y Métodos para Planificar y Programar Tareas de Mantenimiento</td>
+                            <td>Herramientas y Métodos para Planificar y Programar Tareas de Mantenimiento: Este eje evalúa el nivel de digitalización, estructuración y eficacia en la planificación, programación y asignación de tareas de mantenimiento. Considera la evolución desde métodos informales y reactivos, hasta sistemas avanzados que permiten una gestión proactiva, integrada y optimizada de los recursos, tiempos y órdenes de trabajo.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="mantenimiento_planificacion_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Las tareas de mantenimiento se realizan de forma reactiva y sin planificación formal. La asignación se basa en comunicación verbal o notas informales. No existe trazabilidad ni control de las actividades.<br>
+                                    2 - Uso de herramientas visuales simples (ej. tablero físico, calendario, Excel básico) para programar tareas de forma manual y a corto plazo, con baja capacidad de priorización o seguimiento.<br>
+                                    3 - Se emplean hojas de cálculo detalladas o bases de datos simples para planificar y programar tanto mantenimiento preventivo como correctivo. El seguimiento de órdenes de trabajo es manual, pero más sistemático.<br>
+                                    4 - Se utiliza un sistema de gestión computarizada del mantenimiento (CMMS/GMAO) para la planificación y programación centralizada, asignación de recursos y seguimiento digital completo de las órdenes de trabajo.<br>
+                                    5 - El mantenimiento se planifica y programa de forma dinámica mediante un CMMS avanzado, integrado con sistemas de planificación de producción (MES, APS) y ERP. Se optimiza el uso de recursos, se gestionan las paradas planificadas eficientemente y se alinean las tareas con los objetivos operativos.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="mantenimiento_planificacion_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="mantenimiento_planificacion_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="mantenimiento_planificacion_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Estrategia y Enfoque Predominante de Mantenimiento de Activos</td>
+                            <td>Gestión del Mantenimiento (enfocado en la estrategia de mantenimiento): Este eje evalúa el enfoque estratégico predominante en la gestión del mantenimiento de activos físicos. Analiza cómo evoluciona la organización desde un mantenimiento reactivo hasta un enfoque predictivo, apoyado en tecnologías avanzadas, analítica de datos e integración con la gestión del ciclo de vida de los activos.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="mantenimiento_estrategia_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Mantenimiento predominantemente correctivo (solo se repara cuando falla).<br>
+                                    2 - Mantenimiento preventivo basado en calendario o uso (tiempo/ciclos), gestionado manualmente o con herramientas simples.<br>
+                                    3 - Se adopta una estrategia de mantenimiento preventivo sistemático, comúnmente soportada por herramientas digitales (ej. CMMS/GMAO) para la gestión de planes y el seguimiento de órdenes de trabajo.<br>
+                                    4 - Implementación de Mantenimiento Basado en Condición (CBM) utilizando datos de sensores y monitorización para optimizar los planes preventivos e intervenir según necesidad real.<br>
+                                    5 - Adopción de Mantenimiento Predictivo (PdM) utilizando IA y análisis de datos para anticipar fallos; gestión integral del ciclo de vida de los activos (EAM) y cultura de fiabilidad.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="mantenimiento_estrategia_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="mantenimiento_estrategia_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="mantenimiento_estrategia_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Gestión Digital de la Seguridad y Salud en el Trabajo (SST)</td>
+                            <td>Uso de herramientas y sistemas digitales para la gestión proactiva de la seguridad laboral, identificación de riesgos, reporte de incidentes, cumplimiento normativo y promoción de una cultura de seguridad.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_salud_trabajo_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Reactivo / Basado en Papel: Gestión de SST manual, reactiva ante incidentes; documentación en papel, sin análisis sistemático de riesgos o datos.<br>
+                                    2 - Documentado / Cumplimiento Básico: Procedimientos de SST documentados; registros manuales o en hojas de cálculo simples; se cumplen requisitos legales mínimos; capacitación básica.<br>
+                                    3 - Sistemas Digitales Iniciales / Gestión Proactiva: Uso de software básico o módulos para registrar incidentes, gestionar EPPs, y realizar seguimiento de acciones correctivas; se realizan análisis de riesgos más sistemáticos.<br>
+                                    4 - Plataformas Dedicadas / Análisis y Prevención: Uso de plataformas de software EHS (Medioambiente, Salud y Seguridad) dedicadas para gestión integral de SST; análisis de tendencias de incidentes/riesgos, gestión digital de permisos de trabajo, auditorías y formación online.<br>
+                                    5 - Cultura de Seguridad Digitalizada e Integrada / Predictiva: Gestión de SST totalmente integrada con operaciones y mantenimiento mediante plataformas EHS avanzadas; uso de IoT/sensores para monitoreo de condiciones de riesgo en tiempo real, análisis predictivo de incidentes, y una cultura de seguridad digitalmente habilitada y participativa.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_salud_trabajo_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_salud_trabajo_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="seguridad_salud_trabajo_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Digitalización de la Seguridad de Maquinaria y Procesos</td>
+                            <td>Aplicación de tecnologías digitales para mejorar la seguridad intrínseca de la maquinaria, el control de procesos peligrosos y la prevención de accidentes operacionales.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_maquinaria_procesos_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    Cumplimiento Normativo Básico / Controles Físicos: Seguridad basada en guardas físicas, enclavamientos mecánicos básicos y cumplimiento de normativas mínimas; sin digitalización específica para seguridad de maquinaria.<br>
+                                    Sensores de Seguridad y Alarmas Básicas: Uso de sensores de seguridad básicos (ej. paradas de emergencia, barreras fotoeléctricas) conectados a sistemas de control simples con alarmas locales; registros manuales de inspecciones de seguridad.<br>
+                                    Sistemas de Seguridad Programables (PLC de Seguridad): Implementación de PLCs de seguridad para gestionar funciones de seguridad complejas; diagnósticos básicos de los sistemas de seguridad; inicio de digitalización de checklists de seguridad.<br>
+                                    Monitoreo Digital y Diagnóstico Avanzado de Seguridad: Sistemas de seguridad integrados con la red de control (MES/SCADA) para monitoreo centralizado del estado de seguridad, diagnóstico avanzado de fallos y gestión digital de procedimientos de bloqueo/etiquetado (LOTO).<br>
+                                    Seguridad Funcional Avanzada e Inteligente: Uso de tecnologías avanzadas (ej. visión artificial para detección de zonas peligrosas, robótica colaborativa segura, simulación para análisis de riesgos de procesos) y sistemas que pueden predecir o adaptarse a condiciones de riesgo, integrados con la gestión de SST.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_maquinaria_procesos_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_maquinaria_procesos_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="seguridad_maquinaria_procesos_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Gestión del Desempeño Ambiental y Cumplimiento Normativo</td>
+                            <td>Uso de sistemas y herramientas digitales para monitorear el impacto ambiental general de las operaciones (incluyendo consumo de recursos como energía y agua, control de emisiones atmosféricas y efluentes, y una gestión básica de residuos) y asegurar el cumplimiento de la normativa ambiental.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="desempeno_ambiental_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Reactivo / Sin Gestión Sistemática. Gestión ambiental solo por obligación legal puntual; registros en papel (si hay); sin monitoreo de consumos o residuos.<br>
+                                    2 - Monitoreo Básico y Registros Centralizados Simples. Monitoreo manual básico de energía, agua y volumen total de residuos; registros digitales simples (ej. Excel) para cumplimiento.<br>
+                                    3 - Sistemas para Seguimiento y Reportes de Cumplimiento. Uso de software para seguimiento de consumos (energía, agua), residuos y emisiones generales; informes para cumplimiento y KPIs ambientales básicos.<br>
+                                    4 - Monitoreo en Tiempo Real y Optimización de Recursos Específicos. Sensores para monitoreo en tiempo real de energía, agua y/o emisiones; uso de datos para optimizar estos recursos; dashboards ambientales.<br>
+                                    5 - Gestión Ambiental Estratégica e Integrada / Sostenibilidad Proactiva. Plataforma ambiental integrada con producción; análisis predictivo para optimizar recursos y minimizar impacto; estrategias de sostenibilidad digitalmente habilitadas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="desempeno_ambiental_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="desempeno_ambiental_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="desempeno_ambiental_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Digitalización de la Gestión de Residuos y Prácticas de Economía Circular</td>
+                            <td>Aplicación de herramientas digitales para optimizar la clasificación, seguimiento, valorización y disposición de residuos sólidos, y para facilitar la implementación de principios de economía circular.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestion_residuos_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Gestión Básica y Disposición Final: Gestión de residuos enfocada en la recolección y disposición final según normativa, con registros manuales básicos.<br>
+                                    2 - Implementación de clasificación de residuos en origen; seguimiento digital simple de cantidades y tipos de residuos generados (ej. hojas de cálculo).<br>
+                                    3 - Optimización de Rutas y Logística Inversa Digitalizada: Uso de herramientas digitales para optimizar la recolección interna/externa de residuos y gestionar la logística inversa de materiales recuperables.<br>
+                                    4 - Uso de plataformas digitales para la trazabilidad completa de los flujos de residuos, identificación de oportunidades de valorización (reciclaje, reutilización) y conexión con gestores o mercados de subproductos.<br>
+                                    5 - Ecosistemas Digitales para Economía Circular: Participación o desarrollo de ecosistemas digitales que facilitan el intercambio de subproductos y la implementación de modelos de negocio basados en la economía circular, soportados por datos y plataformas colaborativas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="gestion_residuos_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="gestion_residuos_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="gestion_residuos_observaciones"></td>
+                        </tr>
+                        <tr class="table-summary-row">
+                            <td colspan="6" style="text-align: right;"><strong>PROMEDIO Eje 5:</strong></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje5_actual" min="0" max="5" value="1" class="narrow-input" readonly></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje5_deseada" min="0" max="5" value="3" class="narrow-input" readonly></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <hr>
+
         
         <section class="responsibles">
             <h2>Responsables del Proyecto</h2>
