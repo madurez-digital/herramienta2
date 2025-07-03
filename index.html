@@ -1870,6 +1870,267 @@
         </section>
         
         <hr>
+
+        <section>
+            <h2>Diagnóstico de Madurez Digital - Parte 2</h2>
+            <p class="instruction">Continúe evaluando el nivel actual y deseado de madurez digital de su empresa en los siguientes ejes. Utilice "0" si el estado es desconocido o no aplica.</p>
+        
+            <div class="table-container">
+                <table class="maturity-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" style="width: 5%;">Eje</th>
+                            <th rowspan="2" style="width: 5%;">Item</th>
+                            <th rowspan="2" style="width: 8%;">Sub Eje</th>
+                            <th rowspan="2" style="width: 20%;">Descripción</th>
+                            <th rowspan="2" style="width: 8%; text-align: center;">¿Aplica a mi empresa?</th>
+                            <th rowspan="2" style="width: 30%;">Descripción de niveles</th>
+                            <th colspan="2" style="width: 14%; text-align: center;">Nivel de Madurez</th>
+                            <th rowspan="2" style="width: 10%;">Observaciones</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 7%; text-align: center;">Situación Actual</th>
+                            <th style="width: 7%; text-align: center;">Situación Deseada / esperada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5"><strong>Eje 2:<br>Operaciones</strong></td>
+                            <td>7</td>
+                            <td>Gestión y Analítica de Desempeño Operativo</td>
+                            <td>Gestión y Analítica de Desempeño Operativo: Mide la capacidad de la organización para recopilar, analizar y generar reportes de datos de operación (eficiencia, disponibilidad, calidad, rendimiento), incluyendo indicadores clave como OEE y otros KPIs, como base para la mejora continua y la toma de decisiones informadas.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="desempeno_operativo_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1- Reactivo y manual. Los datos de producción se registran de manera manual en papel o Excel aislado, de forma esporádica e informal. No se calcula el OEE ni se analizan las pérdidas sistemáticamente, lo que limita la toma de decisiones basada en datos.<br>
+                                    2 - Captura manual y centralizada. Se recogen de manera sistemática los datos operativos (producción, calidad, disponibilidad) usando herramientas como Excel, y se almacenan en un repositorio compartido. Aunque mejora la visibilidad, el análisis sigue siendo limitado y propenso a errores humanos.<br>
+                                    3 - Digitalización parcial y reportes estándar. Algunas máquinas o líneas incorporan sistemas digitales básicos (CMMS/MES) que capturan automáticamente datos sectoriales. La información fluye a una base estructurada y se generan reportes estandarizados de desempeño, pero sin consolidarse a nivel planta ni integrarse con otras áreas.<br>
+                                    4 - Plataforma integrada en tiempo real. Un sistema centralizado (MES/ERP) consolida en tiempo real los indicadores operativos y de OEE. Dashboards interactivos permiten visualizar tendencias y profundizar con análisis de causa raíz, impulsando mejoras continuas basadas en datos confiables.<br>
+                                    5 - Analítica avanzada y prescriptiva. Toda la información de producción, calidad, stock y mantenimiento se integra en una plataforma única. Se aplican modelos predictivos e IA para anticipar desviaciones y generar recomendaciones “what‑if”, convirtiendo el OEE en motor de optimización continua y soporte estratégico en tiempo real.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="desempeno_operativo_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="desempeno_operativo_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="desempeno_operativo_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Planificación de producción</td>
+                            <td>Planificación de producción: Evalúa el grado de formalización, digitalización e integración de los procesos de planificación de la producción, considerando cómo se gestionan los recursos, las restricciones y la capacidad operativa para garantizar un flujo eficiente y alineado con la demanda.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="planificacion_produccion_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Planificación informal o reactiva, utilizando herramientas manuales (papel, Word, Excel) sin un proceso estructurado. No se siguen procesos definidos ni se consideran de manera sistemática las restricciones productivas.<br>
+                                    2 - Planificación manual estructurada (ej. hojas de cálculo avanzadas, bases de datos simples) siguiendo métodos definidos y considerando restricciones básicas, pero sin análisis de capacidad detallado.<br>
+                                    3 - Se emplean tableros visuales físicos o digitales para organizar la producción. La planificación puede ser de capacidad infinita o limitada, sin considerar restricciones reales de forma sistemática.<br>
+                                    4 - Se cuenta con un software de planificación centralizado (APS básico o módulo ERP) que considera capacidad finita, disponibilidad de recursos y consolida planes de producción. La integración con otros sistemas es parcial o limitada.<br>
+                                    5 - La planificación se realiza mediante un sistema de Planificación Avanzada, completamente integrado con ERP y MES, sincronizado en tiempo real, permitiendo planificación dinámica, optimización multicriterio y simulación de escenarios, ademas de una alta capacidad de adaptación a cambios en la demanda o en la operación.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="planificacion_produccion_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="planificacion_produccion_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="planificacion_produccion_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Automatización y Control de Procesos Productivos (Máquinas y Equipos)</td>
+                            <td>Automatización y control de procesos productivos: Mide el grado de automatización en la operación y control de máquinas, desde el manejo manual hasta sistemas inteligentes que se autooptimizan.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="automatizacion_control_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Control completamente manual. Operación mediante dispositivos mecánicos (pulsadores, palancas), con intervención directa y continua del operario en cada etapa del proceso.<br>
+                                    2 - Control básico y operación manual. Presencia de tecnología de automatización (como PLC o DCS), con secuencias definidas y ejecutadas manualmente por el operario.<br>
+                                    3 - Automatización parcial de secuencias con PLC/DCS. Algunas etapas del proceso están automatizadas, aunque persiste una importante intervención humana para supervisión o ejecución de partes del ciclo.<br>
+                                    4 - Integración con sistemas de gestión operativa (MES/MOM). Los sistemas de control se comunican con plataformas de gestión de operaciones, permitiendo una coordinación más eficiente entre el nivel operativo y el nivel de planificación.<br>
+                                    5 - Control avanzado, adaptativo y predictivo con IA y Gemelos Digitales. Implementación de tecnologías inteligentes que permiten la optimización del proceso mediante análisis predictivo, simulación en tiempo real y adaptación dinámica a las condiciones de operación.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="automatizacion_control_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="automatizacion_control_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="automatizacion_control_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Gestión de Calidad en Operaciones</td>
+                            <td>Gestión de Calidad en el Proceso Productivo: Este eje evalua la madurez de los procesos de gestión de calidad, partiendo de inspecciones reactivas al final del proceso, hasta sistemas predictivos, digitalizados e integrados, que permiten una gestión proactiva de la calidad basada en datos y tecnologías inteligentes.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestion_calidad_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Inspección final sin registros sistemáticos. La calidad se verifica únicamente al final del proceso, de forma manual y sin documentación estructurada.<br>
+                                    2 - Controles manuales en puntos críticos con registros. Se realizan inspecciones durante etapas clave del proceso, con registros manuales que permiten cierto seguimiento.<br>
+                                    3 - Uso de herramientas estadísticas básicas y digitalización. Se aplican técnicas como el Control Estadístico de Procesos (SPC) en forma manual, con digitalización de los registros de calidad.<br>
+                                    4 - Implementación de técnicas de Control Estadístico de Procesos automatizadas en línea, con sistemas digitales para gestionar no conformidades y acciones correctivas.<br>
+                                    5 - Gestión de calidad predictiva e integrada con IA. Sistemas inteligentes que anticipan desvíos de calidad, con trazabilidad completa y gestión proactiva basada en modelos predictivos y análisis avanzados.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="gestion_calidad_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="gestion_calidad_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="gestion_calidad_observaciones"></td>
+                        </tr>
+                        <tr class="table-summary-row">
+                            <td colspan="6" style="text-align: right;"><strong>PROMEDIO Eje 2:</strong></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje2_actual" min="0" max="5" value="3" class="narrow-input" readonly></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje2_deseada" min="0" max="5" value="4" class="narrow-input" readonly></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td rowspan="7"><strong>Eje 3:<br>Sistemas de Información y Analítica de Datos</strong></td>
+                            <td>13</td>
+                            <td>Integración ERP</td>
+                            <td>Toma de datos del Sistema ERP: Este eje analiza el grado de integración del sistema ERP con otras plataformas de la organización, evaluando cómo se obtienen, procesan y comparten los datos.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="integracion_erp_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Entrada manual de datos no consolidados. Captura de datos desde múltiples fuentes sin integración, con alto esfuerzo humano para recopilar y consolidar información.<br>
+                                    2 - Informes manuales estandarizados. Elaboración de reportes siguiendo procedimientos definidos, pero con generación y análisis manual.<br>
+                                    3 - Intercambio de datos semiautomatizado con reportes personalizables. Flujo parcial de información mediante archivos (como Excel o CSV) y uso de macros simples; se cuenta con dashboards y reportes configurables.<br>
+                                    4 - Automatización del intercambio de datos entre sistemas. Conexión automatizada entre el ERP y sistemas como MES o CRM a través de archivos estructurados, vistas de base de datos o APIs básicas.<br>
+                                    5 - Integración robusta y en tiempo real con sistemas críticos. Flujo de datos continuo y bidireccional entre el ERP y otros sistemas (MES, PLM, CRM, etc.) mediante APIs o WebServices, garantizando una sincronización eficiente y en tiempo real.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="integracion_erp_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="integracion_erp_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="integracion_erp_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Sistema de informes de calidad y producción.</td>
+                            <td>Generación de Informes y Análisis de Desempeño: Este eje evalúa la capacidad de la organización para consolidar, presentar y analizar datos de calidad y producción mediante sistemas de reporte. El nivel de madurez refleja la evolución desde informes manuales y esporádicos hasta plataformas integradas de analítica avanzada que permiten la toma de decisiones basada en datos en tiempo real.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="informes_calidad_produccion_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Informes manuales y no estandarizados. Elaboración ocasional de informes en herramientas básicas (como Word o Excel), sin formatos definidos ni procesos consistentes.<br>
+                                    2 - Informes manuales estandarizados con fuentes no consolidadas. Generación regular de reportes siguiendo procedimientos definidos, pero con datos provenientes de múltiples fuentes no integradas.<br>
+                                    3 - Informes semiautomatizados con conexión a bases de datos: Uso de herramientas como Excel avanzado o Crystal Reports para generar informes conectados a repositorios de datos estructurados, con menor intervención manual.<br>
+                                    4 - Informes integrados en sistemas operativos específicos: Generación de reportes mediante módulos integrados en sistemas como LIMS (calidad) o MES (producción), con dashboards y visualizaciones prediseñadas.<br>
+                                    5 - Plataforma de BI con integración de múltiples fuentes: Uso de soluciones de Business Intelligence que integran datos de calidad, producción y otras áreas (ERP, LIMS, MES), permitiendo análisis dinámicos, KPIs consolidados y visualización avanzada para la toma de decisiones estratégicas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="informes_calidad_produccion_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="informes_calidad_produccion_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="informes_calidad_produccion_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Gestión de especificaciones de productos y recetas</td>
+                            <td>Gestión de especificaciones de productos y fórmulas generales: Este eje analiza el nivel de madurez en la gestión de especificaciones de productos, fórmulas o recetas, evaluando cómo se crean, almacenan, controlan y actualizan estos datos críticos.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestion_especificaciones_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Las especificaciones se registran en herramientas básicas (Word, Excel), sin control de versiones ni centralización.<br>
+                                    2 - Los documentos se administran centralmente en servidores de archivos y en estructuras de carpetas definidas, con acceso compartido pero sin control formal de cambios o versiones.<br>
+                                    3 - Proceso formal de gestión de especificaciones soportado por un sistema dedicado básico (ej. base de datos, software simple de gestión documental), con control de versiones incipiente y procesos básicos de aprobación que permiten una gestión más estructurada.<br>
+                                    4 - Plataforma centralizada (ej. PLM básico, módulo ERP) para la gestión de especificaciones y datos de producto, con flujos de trabajo definidos para creación, revisión, aprobación y gestión de cambios (ciclo de vida).<br>
+                                    5 - Plataforma robusta e integrada (PLM, ERP o MES) que gestiona especificaciones, recetas, listas de materiales (BOM), y configuradores de producto, con integración total a los sistemas de planificación y ejecución operativa.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="gestion_especificaciones_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="gestion_especificaciones_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="gestion_especificaciones_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Desarrollo de procesos - Experimentos de laboratorio (documentación - cuaderno electrónico).</td>
+                            <td>Desarrollo de procesos - Experimentos de laboratorio: Este eje evalúa cómo se documenta y gestiona la información generada durante los experimentos de laboratorio vinculados al desarrollo de procesos.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="desarrollo_procesos_lab_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Registro manual y no administrado: Documentación de experimentos en herramientas básicas (Word, Excel), sin estructura formal ni control de versiones.<br>
+                                    2 - Gestión centralizada de documentos: Almacenamiento organizado en servidores mediante estructuras de carpetas, con acceso compartido pero sin trazabilidad ni estandarización de formatos.<br>
+                                    3 - Herramientas estructuradas de registro básico: Uso de bases de datos simples (como Access) o plantillas predefinidas para capturar información experimental, con escasa capacidad de análisis avanzado o trabajo colaborativo.<br>
+                                    4 - Cuaderno de Laboratorio Electrónico (ELN) o módulo de I+D: Registro estructurado y digital de experimentos mediante un ELN o módulo específico en PLM/LIMS, que permite trazabilidad, repetibilidad y análisis más eficiente de resultados.<br>
+                                    5 - Cuaderno de Laboratorio Electrónico (ELN) totalmente integrado con sistemas PLM (Gestión del Ciclo de Vida del Producto), LIMS (Sistema de Gestión de Información de Laboratorio) y equipos de laboratorio, permitiendo el flujo automatizado de datos, la gestión colaborativa del conocimiento de I+D y el soporte a la innovación basada en datos.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="desarrollo_procesos_lab_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="desarrollo_procesos_lab_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="desarrollo_procesos_lab_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Captura y Digitalización de Datos de Calidad en Origen</td>
+                            <td>Métodos y herramientas Captura y Digitalización de Datos de Calidad en Origen: Este eje evalúa el grado de madurez en la recolección de datos de calidad desde el punto de control del proceso. Mide la evolución desde registros manuales en papel hasta sistemas automatizados e integrados que permiten capturar, centralizar y utilizar los datos en tiempo real para la toma de decisiones y la mejora continua.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="digitalizacion_datos_calidad_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Registro manual en papel, sin digitalización estructurada: Los datos de calidad se anotan a mano en el lugar de control, sin estandarización ni almacenamiento digital centralizado.<br>
+                                    2 - Registro manual en formatos digitales básicos (locales): Los datos se ingresan manualmente en archivos como Excel en la planta, con digitalización posterior y almacenamiento poco estructurado o disperso.<br>
+                                    3 - Ingreso digital directo en sistemas centralizados simples: Los datos se cargan en tiempo real o cercano al evento directamente en bases de datos o plataformas digitales básicas, permitiendo acceso centralizado.<br>
+                                    4 - Captura semiautomatizada conectada a sistemas QMS/LIMS: Parte de los datos se recolectan automáticamente desde lectores o equipos de medición conectados a sistemas de gestión de calidad (QMS) o de laboratorio (LIMS).<br>
+                                    5 - Captura automatizada e integración en tiempo real (IoT): Los datos clave de calidad se obtienen automáticamente y en tiempo real desde sensores, dispositivos IoT o equipos avanzados, con integración directa a plataformas como MES, QMS o ERP, garantizando trazabilidad, análisis inmediato y decisiones basadas en datos.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="digitalizacion_datos_calidad_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="digitalizacion_datos_calidad_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="digitalizacion_datos_calidad_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Seguridad de la Información y Gobernanza de Datos</td>
+                            <td>Seguridad de la Información y Gobernanza de Datos: Este eje analiza las prácticas y políticas para proteger los activos de información, asegurar la integridad y disponibilidad de los datos, y cumplir con las regulaciones pertinente</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_gobernanza_datos_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - La seguridad es mínima y reactiva. Se utilizan herramientas básicas como antivirus y contraseñas simples. No existen políticas formales ni una gestión estructurada de datos. La conciencia de riesgos es muy baja y los respaldos, si existen, son informales.<br>
+                                    2 - Existen políticas básicas documentadas, principalmente para respaldos y control de accesos, pero su aplicación es inconsistente. Los respaldos son irregulares y rara vez se prueban. La organización empieza a reconocer amenazas, aunque con una comprensión limitada.<br>
+                                    3 - Se implementan políticas de seguridad en los sistemas principales de TI, incluyendo firewalls, antivirus gestionado y contraseñas robustas. Los respaldos son regulares y probados. Hay una conciencia básica de seguridad y se ofrece capacitación ocasional.<br>
+                                    4 - La organización cuenta con una estrategia definida de ciberseguridad y ha iniciado la gobernanza de datos. Se clasifican los datos, se asignan roles de acceso y se monitorean vulnerabilidades. La capacitación es regular y adaptada a los distintos perfiles de riesgo.<br>
+                                    5 - Existe un marco integral de seguridad y gobernanza alineado con estándares y objetivos del negocio. La seguridad se incorpora desde el diseño, con monitoreo continuo, gestión avanzada de identidades y respuesta a incidentes bien establecida. La cultura de ciberseguridad está establecida y se mejora continuamente mediante auditorías y métricas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_gobernanza_datos_actual" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_gobernanza_datos_deseada" min="0" max="5" value="3" class="narrow-input"></td>
+                            <td><input type="text" name="seguridad_gobernanza_datos_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Seguridad de red: conexiones remotas</td>
+                            <td>Seguridad de red: conexiones remotas: Evalúa el nivel de control, protección y trazabilidad sobre las conexiones remotas a la red corporativa. Considera mecanismos como cifrado, autenticación, gestión de accesos y monitoreo, con el fin de reducir riesgos asociados al acceso remoto no autorizado o mal protegido.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_red_remotas_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - Las conexiones remotas no están controladas ni cifradas. Se permite el acceso desde cualquier lugar sin mecanismos de seguridad definidos, lo que representa un alto riesgo de intrusión.<br>
+                                    2 - Se utiliza una VPN para el acceso remoto, pero sin control centralizado ni seguimiento de usuarios. No hay autenticación avanzada ni monitoreo de actividad.<br>
+                                    3 - El acceso remoto se realiza mediante túneles VPN y está restringido a usuarios autorizados. Se aplican controles de acceso y se monitorea el uso básico.<br>
+                                    4 - Las conexiones remotas requieren un segundo factor de autenticación (2FA) y se gestionan desde una plataforma central. Se controla el acceso por rol y se registra la actividad de los usuarios.<br>
+                                    5 - El acceso remoto se realiza mediante plataformas seguras con funcionalidades tipo proxy. No existe conexión directa a los sistemas, se utiliza 2FA, se registran todas las actividades (trazabilidad) y se aplican credenciales únicas gestionadas.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_red_remotas_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="seguridad_red_remotas_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="seguridad_red_remotas_observaciones"></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Proceso de Compras</td>
+                            <td>Sistemas de Información y Analítica de Datos: Este eje evalúa el grado de digitalización, estructuración y capacidad analítica del proceso de compras dentro de una organización. Considera desde prácticas manuales y datos dispersos hasta la integración de sistemas avanzados de gestión (ERP, e-Procurement) con capacidades de análisis descriptivo y estructuración de datos que habilitan la toma de decisiones.</td>
+                            <td style="text-align: center;"><input type="checkbox" name="proceso_compras_aplica" checked></td>
+                            <td>
+                                <div class="maturity-description">
+                                    1 - El proceso de compras es completamente manual. Se utilizan papel o archivos Excel individuales. La información está dispersa entre áreas, sin control central ni trazabilidad. No existe capacidad de análisis de datos.<br>
+                                    2 - Se comienza a digitalizar el proceso con herramientas básicas como Excel compartido y correo electrónico. Los datos se almacenan de forma central pero no estructurada. El análisis es limitado a consultas manuales y reportes simples.<br>
+                                    3 - Se implementan módulos de compras simples o sistemas ERP básicos. El flujo de compras (requisición, orden, recepción) está parcialmente digitalizado. Los datos están estructurados y permiten informes estandarizados y seguimiento operativo.<br>
+                                    4 - El ciclo completo de compras (P2P) se gestiona en un ERP robusto o plataforma de e-Procurement. Se utilizan portales de proveedores, catálogos electrónicos y aprobaciones digitales. Los datos se analizan mediante dashboards, reportes y KPIs que describen el rendimiento.<br>
+                                    5 - El proceso de compras está altamente automatizado con workflows inteligentes e integración con proveedores. Se aplican analítica avanzada (predictiva/prescriptiva), IA y machine learning para pronosticar demanda, evaluar proveedores y optimizar decisiones. El área de compras es estratégica y basada en datos.
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input type="number" name="proceso_compras_actual" min="0" max="5" value="1" class="narrow-input"></td>
+                            <td style="text-align: center;"><input type="number" name="proceso_compras_deseada" min="0" max="5" value="4" class="narrow-input"></td>
+                            <td><input type="text" name="proceso_compras_observaciones"></td>
+                        </tr>
+                        <tr class="table-summary-row">
+                            <td colspan="6" style="text-align: right;"><strong>PROMEDIO Eje 3:</strong></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje3_actual" min="0" max="5" value="3" class="narrow-input" readonly></td>
+                            <td style="text-align: center;"><input type="number" name="promedio_eje3_deseada" min="0" max="5" value="4" class="narrow-input" readonly></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <hr>
         
         <section class="responsibles">
             <h2>Responsables del Proyecto</h2>
