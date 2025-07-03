@@ -2339,7 +2339,1581 @@
         
         <hr>
 
+        <section>
+            <h2>Madurez Tecnológica</h2>
+            <p class="instruction">Marque con una (X) las tecnologías utilizadas en cada área y especifique el tipo de uso. Indique "Sí" o "No" si la tecnología aplica a su empresa.</p>
         
+            <div class="table-container">
+                <table class="maturity-table technologies-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" style="width: 15%;">Tecnologías</th>
+                            <th rowspan="2" style="width: 8%; text-align: center;">¿Aplica a mi empresa?</th>
+                            <th colspan="7" style="width: 45%; text-align: center;">Áreas Funcionales donde se Utiliza</th>
+                            <th rowspan="2" style="width: 22%; text-align: center;">Tipo de Uso</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 6%;">Dirección</th>
+                            <th style="width: 6%;">Contabilidad y Finanzas</th>
+                            <th style="width: 6%;">Ingeniería</th>
+                            <th style="width: 6%;">Compras</th>
+                            <th style="width: 6%;">Logística</th>
+                            <th style="width: 6%;">Producción</th>
+                            <th style="width: 6%;">Ventas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-header">
+                            <td colspan="10"><strong>EQUIPOS DE SOFTWARE</strong></td>
+                        </tr>
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Tecnologías web tienen implementadas y en qué áreas las utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Página Web (Sitio externo)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="pagina_web_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="pagina_web_direccion" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="pagina_web_ventas" checked></td>
+                            <td>
+                                <select name="pagina_web_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Intranet (Sitio interno)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="intranet_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="intranet_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Extranet (página Web con funciones transaccionales)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="extranet_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="extranet_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Publicidad online</td>
+                            <td style="text-align: center;"><input type="checkbox" name="publicidad_online_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="publicidad_online_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Sistemas Colaborativos tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Videoconferencia</td>
+                            <td style="text-align: center;"><input type="checkbox" name="videoconferencia_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="videoconferencia_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Telefonía IP</td>
+                            <td style="text-align: center;"><input type="checkbox" name="telefonia_ip_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="telefonia_ip_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mensajería instantánea propia de la empresa</td>
+                            <td style="text-align: center;"><input type="checkbox" name="mensajeria_empresa_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="mensajeria_empresa_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email con dominio propio</td>
+                            <td style="text-align: center;"><input type="checkbox" name="email_dominio_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="email_dominio_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redes sociales de la empresa</td>
+                            <td style="text-align: center;"><input type="checkbox" name="redes_sociales_empresa_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="redes_sociales_empresa_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sincronización de archivos</td>
+                            <td style="text-align: center;"><input type="checkbox" name="sincronizacion_archivos_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="sincronizacion_archivos_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Aplicaciones móviles desarrolladas exclusivamente para la empresa</td>
+                            <td style="text-align: center;"><input type="checkbox" name="apps_moviles_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="apps_moviles_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Herramientas de Oficina tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Procesador de texto</td>
+                            <td style="text-align: center;"><input type="checkbox" name="procesador_texto_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="procesador_texto_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hoja de cálculo</td>
+                            <td style="text-align: center;"><input type="checkbox" name="hoja_calculo_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="hoja_calculo_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Presentaciones</td>
+                            <td style="text-align: center;"><input type="checkbox" name="presentaciones_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="presentaciones_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gestor de Base de Datos</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestor_base_datos_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="gestor_base_datos_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gestor de Agenda y Correo Electrónico</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestor_agenda_correo_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="gestor_agenda_correo_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gestor de Archivos PDF</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gestor_pdf_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="gestor_pdf_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lector de Archivos PDF</td>
+                            <td style="text-align: center;"><input type="checkbox" name="lector_pdf_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="lector_pdf_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Sistemas de Gestión tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema de Gestión Integral (ERP –SAP, Tango, etc.-)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="erp_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="erp_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistema de Relación con Clientes (CRM)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="crm_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="crm_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistema de Atención de Reclamos</td>
+                            <td style="text-align: center;"><input type="checkbox" name="reclamos_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="reclamos_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tablero de Control / Balanced Score Card</td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablero_control_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="tablero_control_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Business Intelligence (Cubos, Data Warehouse)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="bi_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="bi_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Herramientas de Big Data</td>
+                            <td style="text-align: center;"><input type="checkbox" name="big_data_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="big_data_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma digital con Proveedores</td>
+                            <td style="text-align: center;"><input type="checkbox" name="plataforma_proveedores_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="plataforma_proveedores_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma digital con clientes</td>
+                            <td style="text-align: center;"><input type="checkbox" name="plataforma_clientes_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="plataforma_clientes_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Inteligencia Artificial – Machine Learning</td>
+                            <td style="text-align: center;"><input type="checkbox" name="ia_ml_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="ia_ml_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistema de Gestión de RRHH</td>
+                            <td style="text-align: center;"><input type="checkbox" name="rrhh_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="rrhh_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas de Gestión de Calidad (SGC)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="sgc_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="sgc_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Software de Control Energético</td>
+                            <td style="text-align: center;"><input type="checkbox" name="control_energetico_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="control_energetico_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Identificación automática de no conformidades</td>
+                            <td style="text-align: center;"><input type="checkbox" name="no_conformidades_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="no_conformidades_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>sistema de ejecución de fabricación (MES)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="mes_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="mes_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Logística / Abastecimiento</td>
+                            <td style="text-align: center;"><input type="checkbox" name="logistica_abastecimiento_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="logistica_abastecimiento_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Sistemas de Control de Producción tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Programación y Planificación (MRP)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="mrp_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="mrp_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Aplicaciones para leer y procesar códigos QR</td>
+                            <td style="text-align: center;"><input type="checkbox" name="qr_apps_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="qr_apps_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Control (PDM)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="pdm_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="pdm_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas de Calidad de Producto</td>
+                            <td style="text-align: center;"><input type="checkbox" name="calidad_producto_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="calidad_producto_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingeniería de Planta / Mantenimiento</td>
+                            <td style="text-align: center;"><input type="checkbox" name="ingenieria_mantenimiento_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="ingenieria_mantenimiento_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Software para crear réplicas virtuales o gemelos digitales</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gemelos_digitales_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="gemelos_digitales_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas de Control de Automatización</td>
+                            <td style="text-align: center;"><input type="checkbox" name="automatizacion_control_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="automatizacion_control_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas SCADA</td>
+                            <td style="text-align: center;"><input type="checkbox" name="scada_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="scada_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas Embebidos</td>
+                            <td style="text-align: center;"><input type="checkbox" name="sistemas_embebidos_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="sistemas_embebidos_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Sistemas de Diseño de Producto y Procesos tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño Asistido por Computadora (CAD)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cad_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="cad_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fabricación Asistida por Computadora (CAM)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cam_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="cam_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingeniería Asistida por Computadora (CAE)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cae_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="cae_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Realidad Aumentada</td>
+                            <td style="text-align: center;"><input type="checkbox" name="ra_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="ra_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Realidad Virtual</td>
+                            <td style="text-align: center;"><input type="checkbox" name="rv_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="rv_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Aplicaciones con Geolocalización tienen en uso y en qué áreas las utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Para Distribución y Logística</td>
+                            <td style="text-align: center;"><input type="checkbox" name="geo_distribucion_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="geo_distribucion_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Para Publicidad</td>
+                            <td style="text-align: center;"><input type="checkbox" name="geo_publicidad_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="geo_publicidad_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Sistemas de Seguridad tienen en uso y en qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas para Seguridad de Infraestructura Crítica</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_infra_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="seguridad_infra_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas para Seguridad de Información</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_info_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="seguridad_info_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="category-header">
+                            <td colspan="10"><strong>EQUIPOS DE INFRAESTRUCTURA</strong></td>
+                        </tr>
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de Tecnologías de Redes Inalámbricas Convergentes tienen en uso y en qué áreas las utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Telefonía Celular</td>
+                            <td style="text-align: center;"><input type="checkbox" name="telefonia_celular_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="telefonia_celular_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redes Wi-Fi</td>
+                            <td style="text-align: center;"><input type="checkbox" name="wifi_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="wifi_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redes Bluetooth</td>
+                            <td style="text-align: center;"><input type="checkbox" name="bluetooth_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="bluetooth_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redes para Internet de las Cosas (IoT)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="iot_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="iot_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Poseen algunas de las siguientes Tecnologías? ¿En qué áreas los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>Servidores Locales (instalados en la empresa)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="servidores_locales_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="servidores_locales_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Servicios en la nube (Cloud Computing)</td>
+                            <td style="text-align: center;"><input type="checkbox" name="cloud_computing_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="cloud_computing_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redes de Área Local cableadas</td>
+                            <td style="text-align: center;"><input type="checkbox" name="redes_cableadas_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="redes_cableadas_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Seguridad Informática</td>
+                            <td style="text-align: center;"><input type="checkbox" name="seguridad_informatica_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="seguridad_informatica_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Conexión a Internet</td>
+                            <td style="text-align: center;"><input type="checkbox" name="internet_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="internet_direccion" checked></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="internet_ingenieria" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="internet_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="category-header">
+                            <td colspan="10"><strong>EQUIPOS DE HARDWARE</strong></td>
+                        </tr>
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de computadoras poseen y para qué funciones las utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>PCs de Escritorio</td>
+                            <td style="text-align: center;"><input type="checkbox" name="pcs_escritorio_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="pcs_escritorio_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Arquitecturas RISC</td>
+                            <td style="text-align: center;"><input type="checkbox" name="arquitecturas_risc_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="arquitecturas_risc_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Notebooks</td>
+                            <td style="text-align: center;"><input type="checkbox" name="notebooks_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="notebooks_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tablets</td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablets_aplica" checked></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablets_contabilidad" checked></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablets_compras" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablets_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="tablets_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="tablets_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de equipos tienen instalados y para qué los utilizan?</td>
+                        </tr>
+                        <tr>
+                            <td>POS</td>
+                            <td style="text-align: center;"><input type="checkbox" name="pos_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="pos_ventas" checked></td>
+                            <td>
+                                <select name="pos_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Discos Compartidos</td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_direccion" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_contabilidad" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_ingenieria" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_compras" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="discos_compartidos_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="discos_compartidos_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PLCs –Controladores Lógicos Programables</td>
+                            <td style="text-align: center;"><input type="checkbox" name="plcs_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="plcs_ingenieria" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="plcs_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GPS</td>
+                            <td style="text-align: center;"><input type="checkbox" name="gps_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="gps_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RFID – Dispositivos de Radio Frecuencia</td>
+                            <td style="text-align: center;"><input type="checkbox" name="rfid_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="rfid_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sensores</td>
+                            <td style="text-align: center;"><input type="checkbox" name="sensores_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="sensores_direccion" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="sensores_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="sensores_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Robótica colaborativa</td>
+                            <td style="text-align: center;"><input type="checkbox" name="robotica_colaborativa_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="robotica_colaborativa_direccion" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="robotica_colaborativa_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="robotica_colaborativa_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Robots industriales</td>
+                            <td style="text-align: center;"><input type="checkbox" name="robots_industriales_aplica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="robots_industriales_direccion" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="robots_industriales_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="robots_industriales_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dispositivos de escaneo de QR</td>
+                            <td style="text-align: center;"><input type="checkbox" name="qr_escaner_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="qr_escaner_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="qr_escaner_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="qr_escaner_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cámaras para control de producción o Almacenes</td>
+                            <td style="text-align: center;"><input type="checkbox" name="camaras_control_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="camaras_control_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="camaras_control_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="camaras_control_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+        
+                        <tr class="subheader">
+                            <td colspan="10">¿Qué tipo de impresoras se utilizan y para qué función?</td>
+                        </tr>
+                        <tr>
+                            <td>Impresoras láser</td>
+                            <td style="text-align: center;"><input type="checkbox" name="impresoras_laser_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select name="impresoras_laser_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Impresoras 3D</td>
+                            <td style="text-align: center;"><input type="checkbox" name="impresoras_3d_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="impresoras_3d_ingenieria" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="impresoras_3d_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="impresoras_3d_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scanners</td>
+                            <td style="text-align: center;"><input type="checkbox" name="scanners_aplica" checked></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="scanners_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="scanners_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="scanners_uso">
+                                    <option value="No se usa" selected>No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa">se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Plotters</td>
+                            <td style="text-align: center;"><input type="checkbox" name="plotters_aplica"></td> <td></td>
+                            <td></td>
+                            <td style="text-align: center;"><input type="checkbox" name="plotters_ingenieria" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="plotters_compras" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="plotters_logistica" checked></td>
+                            <td style="text-align: center;"><input type="checkbox" name="plotters_produccion" checked></td>
+                            <td></td>
+                            <td>
+                                <select name="plotters_uso">
+                                    <option value="No se usa">No se usa</option>
+                                    <option value="se usa a escala piloto o a modo de evlaución">se usa a escala piloto o a modo de evaluación</option>
+                                    <option value="se usa de forma aislada o departamental">se usa de forma aislada o departamental</option>
+                                    <option value="se integrada en los procesos de la empresa" selected>se integrada en los procesos de la empresa</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="table-summary-row" style="margin-top: 20px; text-align: center;">
+                <p><strong>Madurez Tecnológica Media</strong></p>
+            </div>
+        </section>
+        
+       
         <section class="responsibles">
             <h2>Responsables del Proyecto</h2>
             <p><strong>Director:</strong> Mg. Ing. Geraldina Roark</p>
