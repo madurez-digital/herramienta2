@@ -662,3 +662,52 @@
                     </table>
                 </div>
             </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cantidadInputs = document.querySelectorAll('.estructura-empresa-table tbody input[type="number"][name$="Cantidad"]');
+            const totalPersonasSpan = document.getElementById('totalPersonas');
+            const percentInputs = document.querySelectorAll('.estructura-empresa-table tbody input[type="number"][name$="Masculino"], .estructura-empresa-table tbody input[type="number"][name$="Femenino"]');
+
+            function updateTotalPersonas() {
+                let total = 0;
+                cantidadInputs.forEach(input => {
+                    total += parseInt(input.value) || 0;
+                });
+                totalPersonasSpan.textContent = total;
+            }
+
+            function validateGenderPercentage(event) {
+                const row = event.target.closest('tr');
+                const masculinoInput = row.querySelector('input[name$="Masculino"]');
+                const femeninoInput = row.querySelector('input[name$="Femenino"]');
+
+                let masculinoVal = parseFloat(masculinoInput.value) || 0;
+                let femeninoVal = parseFloat(femeninoInput.value) || 0;
+
+                // Ensure sum is not more than 100
+                if (masculinoVal + femeninoVal > 100) {
+                    if (event.target === masculinoInput) {
+                        femeninoInput.value = (100 - masculinoVal).toFixed(2);
+                    } else {
+                        masculinoInput.value = (100 - femeninoVal).toFixed(2);
+                    }
+                }
+            }
+
+            cantidadInputs.forEach(input => {
+                input.addEventListener('input', updateTotalPersonas);
+            });
+
+            percentInputs.forEach(input => {
+                input.addEventListener('input', validateGenderPercentage);
+            });
+
+            // Initial calculations
+            updateTotalPersonas();
+            // No need to call validateGenderPercentage initially as values are 0.00
+        });
+    </script>
+</body>
+</html>
