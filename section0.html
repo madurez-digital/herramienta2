@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 0 - Datos Básicos de la Empresa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diagnóstico de Madurez Digital y Tecnológica</h1>
+        </header>
+
+        <section class="company-data-form">
+            <h2>0 - Datos básicos de la Empresa</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fechaEnvio">Fecha de envío del formulario por parte de la empresa:</label>
+                    <input type="date" id="fechaEnvio" name="fechaEnvio" value="2024-06-12">
+                </div>
+
+                <div class="form-group-radio">
+                    <label>Se realizó reunión virtual:</label>
+                    <input type="radio" id="reunionVirtualSi" name="reunionVirtual" value="Sí">
+                    <label for="reunionVirtualSi">Sí</label>
+                    <input type="radio" id="reunionVirtualNo" name="reunionVirtual" value="No" checked>
+                    <label for="reunionVirtualNo">No</label>
+                </div>
+                <div class="form-group">
+                    <label for="fechaReunionVirtual">Fecha (reunión virtual):</label>
+                    <input type="date" id="fechaReunionVirtual" name="fechaReunionVirtual">
+                </div>
+
+                <div class="form-group-radio">
+                    <label>Se realizó visita a planta:</label>
+                    <input type="radio" id="visitaPlantaSi" name="visitaPlanta" value="Sí">
+                    <label for="visitaPlantaSi">Sí</label>
+                    <input type="radio" id="visitaPlantaNo" name="visitaPlanta" value="No" checked>
+                    <label for="visitaPlantaNo">No</label>
+                </div>
+                <div class="form-group">
+                    <label for="fechaVisitaPlanta">Fecha (visita a planta):</label>
+                    <input type="date" id="fechaVisitaPlanta" name="fechaVisitaPlanta">
+                </div>
+
+                <hr> <h3>DATOS DEL CONSULTOR/ES</h3>
+                <div class="form-group">
+                    <label for="consultorNombre">Nombre y Apellido:</label>
+                    <input type="text" id="consultorNombre" name="consultorNombre">
+                </div>
+                <div class="form-group">
+                    <label for="consultorInstitucion">Institución a la que pertenece:</label>
+                    <input type="text" id="consultorInstitucion" name="consultorInstitucion">
+                </div>
+                <div class="form-group">
+                    <label for="consultorCarrera">Carrera a la que pertenece:</label>
+                    <input type="text" id="consultorCarrera" name="consultorCarrera">
+                </div>
+
+                <hr> <h3>1. DATOS GENERALES DE LA EMPRESA</h3>
+                <div class="form-group">
+                    <label for="razonSocial">1.1 Razón social de la empresa:</label>
+                    <input type="text" id="razonSocial" name="razonSocial">
+                </div>
+                <div class="form-group">
+                    <label for="cuit">1.2 CUIT (sin guiones):</label>
+                    <input type="text" id="cuit" name="cuit" pattern="[0-9]{11}" title="CUIT debe ser de 11 dígitos numéricos sin guiones">
+                </div>
+                <div class="form-group">
+                    <label for="paginaWeb">1.3 Página web:</label>
+                    <input type="url" id="paginaWeb" name="paginaWeb" placeholder="https://ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="emailEmpresa">1.4 Correo electrónico:</label>
+                    <input type="email" id="emailEmpresa" name="emailEmpresa" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefonoEmpresa">1.5 Teléfono:</label>
+                    <input type="tel" id="telefonoEmpresa" name="telefonoEmpresa" placeholder="+54 9 11 1234 5678">
+                </div>
+                <div class="form-group">
+                    <label for="localidadProvincia">1.6 Localidad, Provincia:</label>
+                    <input type="text" id="localidadProvincia" name="localidadProvincia">
+                </div>
+                <div class="form-group">
+                    <label for="sectorRubro">1.7 Sector/rubro industrial:</label>
+                    <input type="text" id="sectorRubro" name="sectorRubro">
+                </div>
+                <div class="form-group">
+                    <label for="superficieCubierta">1.8. Superficie cubierta (m²):</label>
+                    <input type="number" id="superficieCubierta" name="superficieCubierta" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="superficieTotal">1.9. Superficie total (m²):</label>
+                    <input type="number" id="superficieTotal" name="superficieTotal" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="capacidadUtilizada">1.10. % de capacidad utilizada de las maquinarias y equipos de su empresa:</label>
+                    <input type="number" id="capacidadUtilizada" name="capacidadUtilizada" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="cantidadEmpleados">1.11 Cantidad de empleados:</label>
+                    <select id="cantidadEmpleados" name="cantidadEmpleados">
+                        <option value="">Seleccione un rango</option>
+                        <option value="1-10">1-10</option>
+                        <option value="11-50">11-50</option>
+                        <option value="51-200">51-200</option>
+                        <option value="+200">+200</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="antiguedadEmpresa">1.12 Antigüedad de la empresa (años):</label>
+                    <input type="number" id="antiguedadEmpresa" name="antiguedadEmpresa" min="0">
+                </div>
+
+                <hr> <h3>2. DATOS DE LA PERSONA QUE COMPLETA EL DIAGNÓSTICO</h3>
+                <div class="form-group">
+                    <label for="encuestadoApellidoNombre">2.1 Apellido, Nombre:</label>
+                    <input type="text" id="encuestadoApellidoNombre" name="encuestadoApellidoNombre">
+                </div>
+                <div class="form-group">
+                    <label for="encuestadoEmail">2.2 Correo electrónico:</label>
+                    <input type="email" id="encuestadoEmail" name="encuestadoEmail" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="encuestadoTelefono">2.3 Teléfono:</label>
+                    <input type="tel" id="encuestadoTelefono" name="encuestadoTelefono" placeholder="+54 9 11 1234 5678">
+                </div>
+                <div class="form-group">
+                    <label for="encuestadoCargo">2.4 Cargo que ocupa en la empresa:</label>
+                    <input type="text" id="encuestadoCargo" name="encuestadoCargo">
+                </div>
+                <div class="form-group">
+                    <label for="encuestadoAntiguedad">2.5 Antigüedad en la empresa (años):</label>
+                    <input type="number" id="encuestadoAntiguedad" name="encuestadoAntiguedad" min="0">
+                </div>
+                <div class="form-navigation">
+                    <a href="index.html" class="button">Volver al Inicio</a>
+                    <button type="submit" class="button button-primary">Guardar y Siguiente</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
