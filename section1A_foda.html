@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 1A - FODA 4.0 Interno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diagnóstico de Madurez Digital y Tecnológica</h1>
+        </header>
+
+        <section class="foda-form">
+            <h2>FODA 4.0 Interno</h2>
+            <form>
+                <h3>3. PERFIL DE LA EMPRESA</h3>
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>3.1 Modelo de Negocio y Oferta de Valor</h4></legend>
+                        <div class="form-group">
+                            <label for="modeloNegocio">Describa brevemente el modelo de negocio actual de su empresa (productos/servicios, mercados, clientes clave).</label>
+                            <textarea id="modeloNegocio" name="modeloNegocio" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="diferenciacion">¿Cuál es la propuesta de valor o factor diferencial de su empresa en el mercado?</label>
+                            <textarea id="diferenciacion" name="diferenciacion" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ventajaCompetitiva">Identifique las principales ventajas competitivas de su empresa.</label>
+                            <textarea id="ventajaCompetitiva" name="ventajaCompetitiva" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>3.2 Mercado y Clientes</h4></legend>
+                        <div class="form-group">
+                            <label for="segmentacionClientes">¿Cómo segmenta a sus clientes y adapta su oferta a ellos?</label>
+                            <textarea id="segmentacionClientes" name="segmentacionClientes" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tendenciasMercado">¿Qué tendencias o cambios importantes observa en su mercado o en las preferencias de sus clientes?</label>
+                            <textarea id="tendenciasMercado" name="tendenciasMercado" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="competidoresClave">Mencione a sus principales competidores y qué considera que los diferencia de su empresa.</label>
+                            <textarea id="competidoresClave" name="competidoresClave" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>3.3 Cadena de Valor y Proveedores</h4></legend>
+                        <div class="form-group">
+                            <label for="procesoPrincipal">Describa el proceso principal de su cadena de valor (desde la materia prima hasta la entrega del producto/servicio).</label>
+                            <textarea id="procesoPrincipal" name="procesoPrincipal" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="proveedoresClave">¿Quiénes son sus proveedores clave? ¿Qué importancia tienen para su operación?</label>
+                            <textarea id="proveedoresClave" name="proveedoresClave" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="integracionProveedores">¿Existe algún tipo de integración digital o colaboración estrecha con sus proveedores?</label>
+                            <textarea id="integracionProveedores" name="integracionProveedores" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <hr> <h3>4. ESTRUCTURA DE LA EMPRESA</h3>
+                <p>Indique la cantidad de personas que trabajan en cada sector de su empresa.</p>
+                <div class="table-container">
+                    <table class="estructura-empresa-table">
+                        <thead>
+                            <tr>
+                                <th>Sector / Área</th>
+                                <th>Cantidad de Personas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Directivos / Dueños</td>
+                                <td><input type="number" name="directivos" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Administración y Finanzas</td>
+                                <td><input type="number" name="administracion" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Comercial / Ventas / Marketing</td>
+                                <td><input type="number" name="comercial" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Producción / Operaciones</td>
+                                <td><input type="number" name="produccion" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>I+D / Ingeniería / Diseño</td>
+                                <td><input type="number" name="id" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Recursos Humanos</td>
+                                <td><input type="number" name="rrhh" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Tecnologías de la Información (TI)</td>
+                                <td><input type="number" name="ti" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Logística / Distribución</td>
+                                <td><input type="number" name="logistica" min="0" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Otras áreas (especificar)</td>
+                                <td><input type="number" name="otrasAreas" min="0" value="0"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total de Empleados</td>
+                                <td><span id="totalEmpleadosEstructura">0</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <hr> <h3>5. GESTIÓN DE RECURSOS HUMANOS</h3>
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>5.1 Inversión en Capacitación (Últimos 12 meses)</h4></legend>
+                        <p>Marque todas las opciones que apliquen a su empresa:</p>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="procesos"> Capacitación en nuevos procesos o herramientas de producción.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="digital"> Capacitación en habilidades digitales o uso de nuevas tecnologías.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="gestion"> Capacitación en gestión de equipos o liderazgo.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="ventas"> Capacitación en ventas y marketing digital.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="ciberseguridad"> Capacitación en ciberseguridad y protección de datos.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="noInversion"> No se realizó inversión significativa en capacitación.
+                            </label>
+                            <label>
+                                <input type="checkbox" name="capacitacionArea" value="otraCapacitacion"> Otra (describa):
+                                <input type="text" name="otraCapacitacionTexto" placeholder="Describa otro tipo de capacitación">
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>5.2 Habilidades Críticas a Desarrollar (Necesidades Futuras)</h4></legend>
+                        <p>Identifique las 3 habilidades que considera más críticas para el desarrollo futuro de su empresa:</p>
+                        <div class="form-group">
+                            <label for="habilidadCritica1">Habilidad 1:</label>
+                            <input type="text" id="habilidadCritica1" name="habilidadCritica1">
+                        </div>
+                        <div class="form-group">
+                            <label for="habilidadCritica2">Habilidad 2:</label>
+                            <input type="text" id="habilidadCritica2" name="habilidadCritica2">
+                        </div>
+                        <div class="form-group">
+                            <label for="habilidadCritica3">Habilidad 3:</label>
+                            <input type="text" id="habilidadCritica3" name="habilidadCritica3">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>5.3 Eficacia de la Comunicación Interna</h4></legend>
+                        <p>Marque la opción que mejor describa la eficacia de la comunicación interna en su empresa:</p>
+                        <div class="form-group-radio">
+                            <input type="radio" id="comunicacionExcelente" name="eficaciaComunicacion" value="Excelente">
+                            <label for="comunicacionExcelente">Excelente: Fluye sin obstáculos, promueve la colaboración y la innovación.</label>
+                        </div>
+                        <div class="form-group-radio">
+                            <input type="radio" id="comunicacionBuena" name="eficaciaComunicacion" value="Buena">
+                            <label for="comunicacionBuena">Buena: Generalmente efectiva, aunque con algunas áreas de mejora.</label>
+                        </div>
+                        <div class="form-group-radio">
+                            <input type="radio" id="comunicacionRegular" name="eficaciaComunicacion" value="Regular">
+                            <label for="comunicacionRegular">Regular: Existen barreras, a veces la información no llega a tiempo o de forma clara.</label>
+                        </div>
+                        <div class="form-group-radio">
+                            <input type="radio" id="comunicacionDeficiente" name="eficaciaComunicacion" value="Deficiente">
+                            <label for="comunicacionDeficiente">Deficiente: Frecuentes problemas, afecta la productividad y el clima laboral.</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <hr> <h3>6. IDENTIFIQUE PRINCIPALES PROBLEMATICAS INTERNAS DE SU ORGANIZACIÓN QUE DIFICULTAN EL LOGRO DE OBJETIVOS.</h3>
+                <p>Por favor, describa brevemente las problemáticas clave en cada área, y califique su nivel de impacto (1: Bajo, 5: Muy Alto).</p>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>A. Estrategia y Liderazgo</h4></legend>
+                        <div class="form-group">
+                            <label for="problematicaEstrategia">Problematica:</label>
+                            <textarea id="problematicaEstrategia" name="problematicaEstrategia" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="impactoEstrategia">Nivel de Impacto:</label>
+                            <input type="number" id="impactoEstrategia" name="impactoEstrategia" min="1" max="5">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>B. Cultura y Talento Humano</h4></legend>
+                        <div class="form-group">
+                            <label for="problematicaCultura">Problematica:</label>
+                            <textarea id="problematicaCultura" name="problematicaCultura" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="impactoCultura">Nivel de Impacto:</label>
+                            <input type="number" id="impactoCultura" name="impactoCultura" min="1" max="5">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>C. Procesos y Operaciones</h4></legend>
+                        <div class="form-group">
+                            <label for="problematicaProcesos">Problematica:</label>
+                            <textarea id="problematicaProcesos" name="problematicaProcesos" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="impactoProcesos">Nivel de Impacto:</label>
+                            <input type="number" id="impactoProcesos" name="impactoProcesos" min="1" max="5">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>D. Tecnología y Datos</h4></legend>
+                        <div class="form-group">
+                            <label for="problematicaTecnologia">Problematica:</label>
+                            <textarea id="problematicaTecnologia" name="problematicaTecnologia" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="impactoTecnologia">Nivel de Impacto:</label>
+                            <input type="number" id="impactoTecnologia" name="impactoTecnologia" min="1" max="5">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-navigation">
+                    <a href="section0.html" class="button">Anterior</a>
+                    <button type="submit" class="button button-primary">Guardar y Siguiente</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('.estructura-empresa-table input[type="number"]');
+            const totalSpan = document.getElementById('totalEmpleadosEstructura');
+
+            function updateTotal() {
+                let total = 0;
+                inputs.forEach(input => {
+                    total += parseInt(input.value) || 0;
+                });
+                totalSpan.textContent = total;
+            }
+
+            inputs.forEach(input => {
+                input.addEventListener('input', updateTotal);
+            });
+
+            // Inicializar el total al cargar la página
+            updateTotal();
+        });
+    </script>
+</body>
+</html>
