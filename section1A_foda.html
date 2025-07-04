@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sección 1A - FODA 4.0 Interno</title>
+    <title>FODA 4.0 Interno</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,24 +13,44 @@
             <h1>Diagnóstico de Madurez Digital y Tecnológica</h1>
         </header>
 
-        <section class="foda-form">
+        <section class="foda-interno-form">
             <h2>FODA 4.0 Interno</h2>
             <form>
                 <h3>3. PERFIL DE LA EMPRESA</h3>
+
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>3.1 Modelo de Negocio y Oferta de Valor</h4></legend>
                         <div class="form-group">
-                            <label for="modeloNegocio">Describa brevemente el modelo de negocio actual de su empresa (productos/servicios, mercados, clientes clave).</label>
-                            <textarea id="modeloNegocio" name="modeloNegocio" rows="4"></textarea>
+                            <label for="misionEmpresa">3.1.1 Defina Misión de su empresa:</label>
+                            <textarea id="misionEmpresa" name="misionEmpresa" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="diferenciacion">¿Cuál es la propuesta de valor o factor diferencial de su empresa en el mercado?</label>
-                            <textarea id="diferenciacion" name="diferenciacion" rows="4"></textarea>
+                            <label for="visionEmpresa">3.1.2 Defina Visión de su empresa:</label>
+                            <textarea id="visionEmpresa" name="visionEmpresa" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="ventajaCompetitiva">Identifique las principales ventajas competitivas de su empresa.</label>
-                            <textarea id="ventajaCompetitiva" name="ventajaCompetitiva" rows="4"></textarea>
+                            <label>3.1.3 ¿Cuál es la naturaleza de su oferta principal? (Seleccione una)</label>
+                            <div class="form-group-radio">
+                                <input type="radio" id="ofertaProductoFisico" name="naturalezaOferta" value="Producto Físico">
+                                <label for="ofertaProductoFisico">Producto Físico: Bienes tangibles y manufacturados.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="ofertaServicio" name="naturalezaOferta" value="Servicio">
+                                <label for="ofertaServicio">Servicio: Basado en la ejecución de tareas o conocimiento especializado.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="ofertaProductoDigital" name="naturalezaOferta" value="Producto Digital">
+                                <label for="ofertaProductoDigital">Producto Digital: Software, contenido, apps, etc.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="ofertaSolucionHibrida" name="naturalezaOferta" value="Solución Híbrida">
+                                <label for="ofertaSolucionHibrida">Solución Híbrida: Combinación integrada de producto y servicio.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionProductoServicio">3.1.4 Describa brevemente su producto/servicio principal:</label>
+                            <textarea id="descripcionProductoServicio" name="descripcionProductoServicio" rows="4"></textarea>
                         </div>
                     </fieldset>
                 </div>
@@ -39,16 +59,50 @@
                     <fieldset>
                         <legend><h4>3.2 Mercado y Clientes</h4></legend>
                         <div class="form-group">
-                            <label for="segmentacionClientes">¿Cómo segmenta a sus clientes y adapta su oferta a ellos?</label>
-                            <textarea id="segmentacionClientes" name="segmentacionClientes" rows="4"></textarea>
+                            <label>3.2.1 ¿Cuál es su principal modelo de cliente? (Seleccione uno)</label>
+                            <div class="form-group-radio">
+                                <input type="radio" id="clienteB2B" name="modeloCliente" value="B2B">
+                                <label for="clienteB2B">B2B (Business-to-Business): Vendemos a otras empresas.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="clienteB2C" name="modeloCliente" value="B2C">
+                                <label for="clienteB2C">B2C (Business-to-Consumer): Vendemos directamente al consumidor final.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="clienteB2B2C" name="modeloCliente" value="B2B2C">
+                                <label for="clienteB2B2C">B2B2C / Canal: Vendemos a través de distribuidores, mayoristas o socios que llegan al cliente final.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="clienteMixto" name="modeloCliente" value="Mixto">
+                                <label for="clienteMixto">Mixto: Una combinación de los anteriores.</label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="tendenciasMercado">¿Qué tendencias o cambios importantes observa en su mercado o en las preferencias de sus clientes?</label>
-                            <textarea id="tendenciasMercado" name="tendenciasMercado" rows="4"></textarea>
+                            <label for="porcentajeExportacion">3.2.2 Exporta parte de su producción? ¿Qué porcentaje?</label>
+                            <input type="number" id="porcentajeExportacion" name="porcentajeExportacion" min="0" max="100" placeholder="%">
                         </div>
                         <div class="form-group">
-                            <label for="competidoresClave">Mencione a sus principales competidores y qué considera que los diferencia de su empresa.</label>
-                            <textarea id="competidoresClave" name="competidoresClave" rows="4"></textarea>
+                            <label for="sectoresClientes">3.2.3 ¿Cuáles son los principales sectores o segmentos de clientes a los que atiende?</label>
+                            <textarea id="sectoresClientes" name="sectoresClientes" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>3.2.4 ¿Cuál es el alcance geográfico de sus ventas? (Seleccione el principal)</label>
+                            <div class="form-group-radio">
+                                <input type="radio" id="alcanceLocal" name="alcanceGeografico" value="Local / Regional">
+                                <label for="alcanceLocal">Local / Regional</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="alcanceNacional" name="alcanceGeografico" value="Nacional">
+                                <label for="alcanceNacional">Nacional</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="alcanceInternacional" name="alcanceGeografico" value="Internacional">
+                                <label for="alcanceInternacional">Internacional (países limítrofes o región)</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="alcanceGlobal" name="alcanceGeografico" value="Global">
+                                <label for="alcanceGlobal">Global</label>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
@@ -57,105 +111,234 @@
                     <fieldset>
                         <legend><h4>3.3 Cadena de Valor y Proveedores</h4></legend>
                         <div class="form-group">
-                            <label for="procesoPrincipal">Describa el proceso principal de su cadena de valor (desde la materia prima hasta la entrega del producto/servicio).</label>
-                            <textarea id="procesoPrincipal" name="procesoPrincipal" rows="4"></textarea>
+                            <label>3.3.1 ¿Cómo describiría su cadena de suministro? (Marque todas las que apliquen)</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="cadenaSuministro" value="Simple, con pocos proveedores locales."> Simple, con pocos proveedores locales.
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cadenaSuministro" value="Compleja, con múltiples proveedores nacionales y/o internacionales."> Compleja, con múltiples proveedores nacionales y/o internacionales.
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cadenaSuministro" value="Alta dependencia de unos pocos proveedores críticos."> Alta dependencia de unos pocos proveedores críticos.
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="cadenaSuministro" value="Volatilidad en precios y disponibilidad de materia prima."> Volatilidad en precios y disponibilidad de materia prima.
+                                </label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="proveedoresClave">¿Quiénes son sus proveedores clave? ¿Qué importancia tienen para su operación?</label>
-                            <textarea id="proveedoresClave" name="proveedoresClave" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="integracionProveedores">¿Existe algún tipo de integración digital o colaboración estrecha con sus proveedores?</label>
-                            <textarea id="integracionProveedores" name="integracionProveedores" rows="4"></textarea>
+                            <label>3.3.2 ¿Cuál es el nivel de digitalización en la relación con sus proveedores clave?</label>
+                            <div class="form-group-radio">
+                                <input type="radio" id="digitalizacionNivel1" name="digitalizacionProveedores" value="Nivel 1">
+                                <label for="digitalizacionNivel1">Nivel 1 (Manual): La comunicación es por teléfono/email; los pedidos y facturas son en papel o PDF.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="digitalizacionNivel2" name="digitalizacionProveedores" value="Nivel 2">
+                                <label for="digitalizacionNivel2">Nivel 2 (Básico): Usamos planillas compartidas o sistemas básicos para coordinar pedidos.</label>
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" id="digitalizacionNivel3" name="digitalizacionProveedores" value="Nivel 3">
+                                <label for="digitalizacionNivel3">Nivel 3 (Integrado): Estamos conectados digitalmente a través de portales de proveedores, EDI o sistemas integrados para gestionar pedidos, inventario y pagos.</label>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor3">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor3" name="observacionesConsultor3" rows="2"></textarea>
+                </div>
 
-                <hr> <h3>4. ESTRUCTURA DE LA EMPRESA</h3>
-                <p>Indique la cantidad de personas que trabajan en cada sector de su empresa.</p>
+                <hr>
+                <h3>4. ESTRUCTURA DE LA EMPRESA</h3>
                 <div class="table-container">
                     <table class="estructura-empresa-table">
                         <thead>
                             <tr>
-                                <th>Sector / Área</th>
+                                <th></th>
                                 <th>Cantidad de Personas</th>
+                                <th>% Masculino</th>
+                                <th>% Femenino</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Directivos / Dueños</td>
-                                <td><input type="number" name="directivos" min="0" value="0"></td>
+                                <td>4.1 Personal directivo</td>
+                                <td><input type="number" name="directivosCantidad" min="0" value="0"></td>
+                                <td><input type="number" name="directivosMasculino" min="0" max="100" step="0.01" value="0.00"> %</td>
+                                <td><input type="number" name="directivosFemenino" min="0" max="100" step="0.01" value="0.00"> %</td>
                             </tr>
                             <tr>
-                                <td>Administración y Finanzas</td>
-                                <td><input type="number" name="administracion" min="0" value="0"></td>
+                                <td>4.2 Mandos medios</td>
+                                <td><input type="number" name="mandosMediosCantidad" min="0" value="0"></td>
+                                <td><input type="number" name="mandosMediosMasculino" min="0" max="100" step="0.01" value="0.00"> %</td>
+                                <td><input type="number" name="mandosMediosFemenino" min="0" max="100" step="0.01" value="0.00"> %</td>
                             </tr>
                             <tr>
-                                <td>Comercial / Ventas / Marketing</td>
-                                <td><input type="number" name="comercial" min="0" value="0"></td>
+                                <td>4.3 Personal operativo</td>
+                                <td><input type="number" name="operativoCantidad" min="0" value="0"></td>
+                                <td><input type="number" name="operativoMasculino" min="0" max="100" step="0.01" value="0.00"> %</td>
+                                <td><input type="number" name="operativoFemenino" min="0" max="100" step="0.01" value="0.00"> %</td>
                             </tr>
                             <tr>
-                                <td>Producción / Operaciones</td>
-                                <td><input type="number" name="produccion" min="0" value="0"></td>
+                                <td>4.4 Personal administrativo</td>
+                                <td><input type="number" name="administrativoCantidad" min="0" value="0"></td>
+                                <td><input type="number" name="administrativoMasculino" min="0" max="100" step="0.01" value="0.00"> %</td>
+                                <td><input type="number" name="administrativoFemenino" min="0" max="100" step="0.01" value="0.00"> %</td>
                             </tr>
                             <tr>
-                                <td>I+D / Ingeniería / Diseño</td>
-                                <td><input type="number" name="id" min="0" value="0"></td>
-                            </tr>
-                            <tr>
-                                <td>Recursos Humanos</td>
-                                <td><input type="number" name="rrhh" min="0" value="0"></td>
-                            </tr>
-                            <tr>
-                                <td>Tecnologías de la Información (TI)</td>
-                                <td><input type="number" name="ti" min="0" value="0"></td>
-                            </tr>
-                            <tr>
-                                <td>Logística / Distribución</td>
-                                <td><input type="number" name="logistica" min="0" value="0"></td>
-                            </tr>
-                            <tr>
-                                <td>Otras áreas (especificar)</td>
-                                <td><input type="number" name="otrasAreas" min="0" value="0"></td>
+                                <td>4.5 Otros</td>
+                                <td><input type="number" name="otrosCantidad" min="0" value="0"></td>
+                                <td><input type="number" name="otrosMasculino" min="0" max="100" step="0.01" value="0.00"> %</td>
+                                <td><input type="number" name="otrosFemenino" min="0" max="100" step="0.01" value="0.00"> %</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td>Total de Empleados</td>
-                                <td><span id="totalEmpleadosEstructura">0</span></td>
+                                <td>TOTAL</td>
+                                <td><span id="totalPersonas">0</span></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor4">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor4" name="observacionesConsultor4" rows="2"></textarea>
+                </div>
 
-                <hr> <h3>5. GESTIÓN DE RECURSOS HUMANOS</h3>
+
+                <hr>
+                <h3>5. GESTIÓN DE RECURSOS HUMANOS</h3>
+
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>5.1 Inversión en Capacitación (Últimos 12 meses)</h4></legend>
-                        <p>Marque todas las opciones que apliquen a su empresa:</p>
-                        <div class="checkbox-group">
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="procesos"> Capacitación en nuevos procesos o herramientas de producción.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="digital"> Capacitación en habilidades digitales o uso de nuevas tecnologías.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="gestion"> Capacitación en gestión de equipos o liderazgo.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="ventas"> Capacitación en ventas y marketing digital.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="ciberseguridad"> Capacitación en ciberseguridad y protección de datos.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="noInversion"> No se realizó inversión significativa en capacitación.
-                            </label>
-                            <label>
-                                <input type="checkbox" name="capacitacionArea" value="otraCapacitacion"> Otra (describa):
-                                <input type="text" name="otraCapacitacionTexto" placeholder="Describa otro tipo de capacitación">
-                            </label>
+                        <p>Indique el nivel de esfuerzo o inversión que la empresa ha dedicado a la capacitación en las siguientes áreas temáticas para cada rol. (Nula/ baja/ media/ alta)</p>
+                        <div class="table-container">
+                            <table class="capacitacion-table">
+                                <thead>
+                                    <tr>
+                                        <th>Área de Capacitación</th>
+                                        <th>Personal Directivo</th>
+                                        <th>Mandos Medios</th>
+                                        <th>Personal Operativo/Técnico</th>
+                                        <th>Personal Administrativo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Habilidades Digitales/Técnicas (Uso de software, análisis de datos, ciberseguridad, etc.)</td>
+                                        <td>
+                                            <select name="habilidadesDigitalesDirectivo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesDigitalesMandosMedios">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesDigitalesOperativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesDigitalesAdministrativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Habilidades Blandas/Liderazgo (Comunicación, trabajo en equipo, gestión del cambio, etc.)</td>
+                                        <td>
+                                            <select name="habilidadesBlandasDirectivo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesBlandasMandosMedios">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesBlandasOperativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="habilidadesBlandasAdministrativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Metodologías Ágiles/Innovación (Scrum, Lean, Design Thinking, etc.)</td>
+                                        <td>
+                                            <select name="metodologiasAgilesDirectivo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="metodologiasAgilesMandosMedios">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="metodologiasAgilesOperativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="metodologiasAgilesAdministrativo">
+                                                <option value="Nula">Nula</option>
+                                                <option value="Baja">Baja</option>
+                                                <option value="Media">Media</option>
+                                                <option value="Alta">Alta</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Otras: Describa</td>
+                                        <td colspan="4"><input type="text" name="otrasCapacitacionesTexto"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </fieldset>
                 </div>
@@ -163,18 +346,45 @@
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>5.2 Habilidades Críticas a Desarrollar (Necesidades Futuras)</h4></legend>
-                        <p>Identifique las 3 habilidades que considera más críticas para el desarrollo futuro de su empresa:</p>
-                        <div class="form-group">
-                            <label for="habilidadCritica1">Habilidad 1:</label>
-                            <input type="text" id="habilidadCritica1" name="habilidadCritica1">
+                        <p>Para impulsar la competitividad de la empresa, ¿cuáles son las 3 habilidades más importantes a desarrollar en cada grupo?</p>
+
+                        <h5>A. Personal Directivo: (Marque hasta 3)</h5>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="directivoHabilidad" value="Liderazgo para la transformación y gestión del cambio"> Liderazgo para la transformación y gestión del cambio</label>
+                            <label><input type="checkbox" name="directivoHabilidad" value="Visión estratégica y nuevos modelos de negocio digitales"> Visión estratégica y nuevos modelos de negocio digitales</label>
+                            <label><input type="checkbox" name="directivoHabilidad" value="Toma de decisiones basada en datos (Data-Driven)"> Toma de decisiones basada en datos (Data-Driven)</label>
+                            <label><input type="checkbox" name="directivoHabilidad" value="Cultura de innovación y agilidad"> Cultura de innovación y agilidad</label>
+                            <label><input type="checkbox" name="directivoHabilidad" value="Finanzas para proyectos de tecnología e innovación"> Finanzas para proyectos de tecnología e innovación</label>
+                            <label>
+                                <input type="checkbox" name="directivoHabilidad" value="Otra"> Otra: Describa
+                                <input type="text" name="directivoHabilidadOtraTexto">
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="habilidadCritica2">Habilidad 2:</label>
-                            <input type="text" id="habilidadCritica2" name="habilidadCritica2">
+
+                        <h5>B. Mandos Medios (Jefes/Supervisores): (Marque hasta 3)</h5>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="mandosMediosHabilidad" value="Gestión de proyectos con metodologías ágiles (Agile/Scrum)"> Gestión de proyectos con metodologías ágiles (Agile/Scrum)</label>
+                            <label><input type="checkbox" name="mandosMediosHabilidad" value="Liderazgo de equipos híbridos (presencial/remoto)"> Liderazgo de equipos híbridos (presencial/remoto)</label>
+                            <label><input type="checkbox" name="mandosMediosHabilidad" value="Habilidades de coaching y desarrollo de talento"> Habilidades de coaching y desarrollo de talento</label>
+                            <label><input type="checkbox" name="mandosMediosHabilidad" value="Optimización y automatización de procesos"> Optimización y automatización de procesos</label>
+                            <label><input type="checkbox" name="mandosMediosHabilidad" value="Comunicación efectiva y resolución de conflictos"> Comunicación efectiva y resolución de conflictos</label>
+                            <label>
+                                <input type="checkbox" name="mandosMediosHabilidad" value="Otra"> Otra: Describa
+                                <input type="text" name="mandosMediosHabilidadOtraTexto">
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="habilidadCritica3">Habilidad 3:</label>
-                            <input type="text" id="habilidadCritica3" name="habilidadCritica3">
+
+                        <h5>C. Personal Operativo y Administrativo: (Marque hasta 3)</h5>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="operativoAdministrativoHabilidad" value="Dominio de herramientas digitales y software de gestión (CRM, ERP, etc.)"> Dominio de herramientas digitales y software de gestión (CRM, ERP, etc.)</label>
+                            <label><input type="checkbox" name="operativoAdministrativoHabilidad" value="Alfabetización de datos (entender y usar información básica)"> Alfabetización de datos (entender y usar información básica)</label>
+                            <label><input type="checkbox" name="operativoAdministrativoHabilidad" value="Ciberseguridad y buenas prácticas digitales"> Ciberseguridad y buenas prácticas digitales</label>
+                            <label><input type="checkbox" name="operativoAdministrativoHabilidad" value="Atención al cliente a través de canales digitales"> Atención al cliente a través de canales digitales</label>
+                            <label><input type="checkbox" name="operativoAdministrativoHabilidad" value="Adaptabilidad y resolución de problemas"> Adaptabilidad y resolución de problemas</label>
+                            <label>
+                                <input type="checkbox" name="operativoAdministrativoHabilidad" value="Otra"> Otra: Describa
+                                <input type="text" name="operativoAdministrativoHabilidadOtraTexto">
+                            </label>
                         </div>
                     </fieldset>
                 </div>
@@ -182,39 +392,88 @@
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>5.3 Eficacia de la Comunicación Interna</h4></legend>
-                        <p>Marque la opción que mejor describa la eficacia de la comunicación interna en su empresa:</p>
-                        <div class="form-group-radio">
-                            <input type="radio" id="comunicacionExcelente" name="eficaciaComunicacion" value="Excelente">
-                            <label for="comunicacionExcelente">Excelente: Fluye sin obstáculos, promueve la colaboración y la innovación.</label>
-                        </div>
-                        <div class="form-group-radio">
-                            <input type="radio" id="comunicacionBuena" name="eficaciaComunicacion" value="Buena">
-                            <label for="comunicacionBuena">Buena: Generalmente efectiva, aunque con algunas áreas de mejora.</label>
-                        </div>
-                        <div class="form-group-radio">
-                            <input type="radio" id="comunicacionRegular" name="eficaciaComunicacion" value="Regular">
-                            <label for="comunicacionRegular">Regular: Existen barreras, a veces la información no llega a tiempo o de forma clara.</label>
-                        </div>
-                        <div class="form-group-radio">
-                            <input type="radio" id="comunicacionDeficiente" name="eficaciaComunicacion" value="Deficiente">
-                            <label for="comunicacionDeficiente">Deficiente: Frecuentes problemas, afecta la productividad y el clima laboral.</label>
+                        <p>Evalúe los canales que utilizan y qué tan efectivos son para mantener a todos alineados e informados.</p>
+                        <div class="table-container">
+                            <table class="comunicacion-interna-table">
+                                <thead>
+                                    <tr>
+                                        <th>Canal de Comunicación</th>
+                                        <th>¿Se utiliza?</th>
+                                        <th>Frecuencia de uso</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Reuniones presenciales de equipo</td>
+                                        <td><input type="checkbox" name="comunicacionReuniones" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaReuniones"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carteleras físicas / Anuncios</td>
+                                        <td><input type="checkbox" name="comunicacionCarteleras" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaCarteleras"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail / Circulares internas</td>
+                                        <td><input type="checkbox" name="comunicacionEmail" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaEmail"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plataformas de Colaboración (ej. Slack, Microsoft Teams)</td>
+                                        <td><input type="checkbox" name="comunicacionPlataformas" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaPlataformas"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grupos de WhatsApp / Mensajería instantánea</td>
+                                        <td><input type="checkbox" name="comunicacionWhatsapp" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaWhatsapp"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intranet o portal del empleado</td>
+                                        <td><input type="checkbox" name="comunicacionIntranet" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaIntranet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comunicación informal / "de pasillo"</td>
+                                        <td><input type="checkbox" name="comunicacionInformal" value="Sí"> Sí</td>
+                                        <td><input type="text" name="frecuenciaInformal"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </fieldset>
                 </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor5">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor5" name="observacionesConsultor5" rows="2"></textarea>
+                </div>
 
-                <hr> <h3>6. IDENTIFIQUE PRINCIPALES PROBLEMATICAS INTERNAS DE SU ORGANIZACIÓN QUE DIFICULTAN EL LOGRO DE OBJETIVOS.</h3>
-                <p>Por favor, describa brevemente las problemáticas clave en cada área, y califique su nivel de impacto (1: Bajo, 5: Muy Alto).</p>
+                <hr>
+                <h3>6. IDENTIFIQUE PRINCIPALES PROBLEMATICAS INTERNAS DE SU ORGANIZACIÓN QUE DIFICULTAN EL LOGRO DE OBJETIVOS.</h3>
+                <p>Problemática y su Impacto (1-10, donde 10 es alto impacto)</p>
 
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>A. Estrategia y Liderazgo</h4></legend>
-                        <div class="form-group">
-                            <label for="problematicaEstrategia">Problematica:</label>
-                            <textarea id="problematicaEstrategia" name="problematicaEstrategia" rows="3"></textarea>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaEstrategia" value="Falta de una visión y estrategia digital clara y comunicada."> Falta de una visión y estrategia digital clara y comunicada.</label>
+                            <input type="number" name="impactoEstrategia1" min="1" max="10" placeholder="Impacto">
                         </div>
-                        <div class="form-group">
-                            <label for="impactoEstrategia">Nivel de Impacto:</label>
-                            <input type="number" id="impactoEstrategia" name="impactoEstrategia" min="1" max="5">
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaEstrategia" value="Liderazgo poco comprometido con la transformación digital."> Liderazgo poco comprometido con la transformación digital.</label>
+                            <input type="number" name="impactoEstrategia2" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaEstrategia" value="Objetivos departamentales desalineados o en conflicto."> Objetivos departamentales desalineados o en conflicto.</label>
+                            <input type="number" name="impactoEstrategia3" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaEstrategia" value="Toma de decisiones lenta, excesivamente jerárquica o burocrática."> Toma de decisiones lenta, excesivamente jerárquica o burocrática.</label>
+                            <input type="number" name="impactoEstrategia4" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaEstrategia" value="Dificultad para obtener financiamiento o baja inversión en innovación y tecnología."> Dificultad para obtener financiamiento o baja inversión en innovación y tecnología.</label>
+                            <input type="number" name="impactoEstrategia5" min="1" max="10" placeholder="Impacto">
                         </div>
                     </fieldset>
                 </div>
@@ -222,13 +481,25 @@
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>B. Cultura y Talento Humano</h4></legend>
-                        <div class="form-group">
-                            <label for="problematicaCultura">Problematica:</label>
-                            <textarea id="problematicaCultura" name="problematicaCultura" rows="3"></textarea>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaCultura" value="Cultura organizacional resistente al cambio y al riesgo."> Cultura organizacional resistente al cambio y al riesgo.</label>
+                            <input type="number" name="impactoCultura1" min="1" max="10" placeholder="Impacto">
                         </div>
-                        <div class="form-group">
-                            <label for="impactoCultura">Nivel de Impacto:</label>
-                            <input type="number" id="impactoCultura" name="impactoCultura" min="1" max="5">
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaCultura" value="Escasez de talento con habilidades digitales clave."> Escasez de talento con habilidades digitales clave.</label>
+                            <input type="number" name="impactoCultura2" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaCultura" value="Alta rotacion y/o ausentismo del personal"> Alta rotacion y/o ausentismo del personal</label>
+                            <input type="number" name="impactoCultura3" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaCultura" value="Capacitación insuficiente para los desafíos actuales."> Capacitación insuficiente para los desafíos actuales.</label>
+                            <input type="number" name="impactoCultura4" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaCultura" value="Problemas sindicales"> Problemas sindicales</label>
+                            <input type="number" name="impactoCultura5" min="1" max="10" placeholder="Impacto">
                         </div>
                     </fieldset>
                 </div>
@@ -236,13 +507,45 @@
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>C. Procesos y Operaciones</h4></legend>
-                        <div class="form-group">
-                            <label for="problematicaProcesos">Problematica:</label>
-                            <textarea id="problematicaProcesos" name="problematicaProcesos" rows="3"></textarea>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Procesos internos manuales o poco digitalizados."> Procesos internos manuales o poco digitalizados.</label>
+                            <input type="number" name="impactoProcesos1" min="1" max="10" placeholder="Impacto">
                         </div>
-                        <div class="form-group">
-                            <label for="impactoProcesos">Nivel de Impacto:</label>
-                            <input type="number" id="impactoProcesos" name="impactoProcesos" min="1" max="5">
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Falta de agilidad para adaptar procesos o lanzar nuevos productos/servicios al mercado."> Falta de agilidad para adaptar procesos o lanzar nuevos productos/servicios al mercado.</label>
+                            <input type="number" name="impactoProcesos2" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Ineficiencias en la cadena de suministro, logística o gestión de inventarios."> Ineficiencias en la cadena de suministro, logística o gestión de inventarios.</label>
+                            <input type="number" name="impactoProcesos3" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Altos costos operativos o desperdicios que afectan la rentabilidad."> Altos costos operativos o desperdicios que afectan la rentabilidad.</label>
+                            <input type="number" name="impactoProcesos4" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Fallas frecuentes en la calidad o en el cumplimiento de entregas al cliente."> Fallas frecuentes en la calidad o en el cumplimiento de entregas al cliente.</label>
+                            <input type="number" name="impactoProcesos5" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Insuficiente capacidad instalada"> Insuficiente capacidad instalada</label>
+                            <input type="number" name="impactoProcesos6" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Porcentaje elevado de retrabajos"> Porcentaje elevado de retrabajos</label>
+                            <input type="number" name="impactoProcesos7" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Frecuentes accidentes laborales / enfermedades profesionales"> Frecuentes accidentes laborales / enfermedades profesionales</label>
+                            <input type="number" name="impactoProcesos8" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Falta de planeación de recursos productivos"> Falta de planeación de recursos productivos</label>
+                            <input type="number" name="impactoProcesos9" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaProcesos" value="Fallas frecuentes en MQ y Equipos"> Fallas frecuentes en MQ y Equipos</label>
+                            <input type="number" name="impactoProcesos10" min="1" max="10" placeholder="Impacto">
                         </div>
                     </fieldset>
                 </div>
@@ -250,13 +553,380 @@
                 <div class="form-group-fieldset">
                     <fieldset>
                         <legend><h4>D. Tecnología y Datos</h4></legend>
-                        <div class="form-group">
-                            <label for="problematicaTecnologia">Problematica:</label>
-                            <textarea id="problematicaTecnologia" name="problematicaTecnologia" rows="3"></textarea>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaTecnologia" value="Maquinas y /o equipos obsoletos"> Maquinas y /o equipos obsoletos</label>
+                            <input type="number" name="impactoTecnologia1" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaTecnologia" value="Datos de baja calidad, inaccesibles o dispersos."> Datos de baja calidad, inaccesibles o dispersos.</label>
+                            <input type="number" name="impactoTecnologia2" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaTecnologia" value="Nula o baja capacidad para analizar datos y usarlos en la toma de decisiones."> Nula o baja capacidad para analizar datos y usarlos en la toma de decisiones.</label>
+                            <input type="number" name="impactoTecnologia3" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaTecnologia" value="Infraestructura tecnológica poco segura o vulnerable a ciberataques."> Infraestructura tecnológica poco segura o vulnerable a ciberataques.</label>
+                            <input type="number" name="impactoTecnologia4" min="1" max="10" placeholder="Impacto">
+                        </div>
+                        <div class="problem-item">
+                            <label><input type="checkbox" name="problematicaTecnologia" value="Herramientas de trabajo (software/hardware) inadecuadas para las tareas del personal."> Herramientas de trabajo (software/hardware) inadecuadas para las tareas del personal.</label>
+                            <input type="number" name="impactoTecnologia5" min="1" max="10" placeholder="Impacto">
                         </div>
                         <div class="form-group">
-                            <label for="impactoTecnologia">Nivel de Impacto:</label>
-                            <input type="number" id="impactoTecnologia" name="impactoTecnologia" min="1" max="5">
+                            <label for="otrasProblematicasTecnologia">Otras: describa</label>
+                            <textarea id="otrasProblematicasTecnologia" name="otrasProblematicasTecnologia" rows="2"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor6">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor6" name="observacionesConsultor6" rows="2"></textarea>
+                </div>
+
+                <hr>
+                <h3>7. IDENTIFIQUE FORTALEZAS DE SU EMPRESA QUE LA DIFERENCIAN DE LA COMPETENCIA</h3>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>A. Mercado y Experiencia del Cliente</h4></legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="fortalezaMercado" value="Experiencia del Cliente Superior"> Experiencia del Cliente Superior</label>
+                            <label><input type="checkbox" name="fortalezaMercado" value="Marca reconocida y valorada positivamente"> Marca reconocida y valorada positivamente</label>
+                            <label><input type="checkbox" name="fortalezaMercado" value="Comunidad de Clientes Leal y Activa"> Comunidad de Clientes Leal y Activa</label>
+                            <label><input type="checkbox" name="fortalezaMercado" value="Modelo de Negocio Innovador"> Modelo de Negocio Innovador</label>
+                            <label><input type="checkbox" name="fortalezaMercado" value="Precios competitivos"> Precios competitivos</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>B. Operaciones y Producto</h4></legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Agilidad y Velocidad Operativa para afrontar cambios del mercado o ajustar operaciones"> Agilidad y Velocidad Operativa para afrontar cambios del mercado o ajustar operaciones</label>
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Calidad de Producto/Servicio"> Calidad de Producto/Servicio</label>
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Innovación de Producto/Servicio"> Innovación de Producto/Servicio</label>
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Eficiencia gracias a la Automatización y Digitalización"> Eficiencia gracias a la Automatización y Digitalización</label>
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Cumplimiento de entregas en tiempo y forma"> Cumplimiento de entregas en tiempo y forma</label>
+                            <label><input type="checkbox" name="fortalezaOperaciones" value="Velocidad de entrega"> Velocidad de entrega</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>C. Talento y Cultura Organizacional</h4></legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="fortalezaTalento" value="Cultura de Datos, se toman decisiones estratégicas basadas en el análisis de datos, no solo en la intuición"> Cultura de Datos, se toman decisiones estratégicas basadas en el análisis de datos, no solo en la intuición</label>
+                            <label><input type="checkbox" name="fortalezaTalento" value="Recursos humanos con Habilidades Digitales y/o altamente capacitados"> Recursos humanos con Habilidades Digitales y/o altamente capacitados</label>
+                            <label><input type="checkbox" name="fortalezaTalento" value="Cultura Organizacional Ágil y Abierta al Cambio"> Cultura Organizacional Ágil y Abierta al Cambio</label>
+                            <label><input type="checkbox" name="fortalezaTalento" value="Liderazgo Visionario y Comprometido con la innovación y digitalización"> Liderazgo Visionario y Comprometido con la innovación y digitalización</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="otrasFortalezas">Otras: describa</label>
+                    <textarea id="otrasFortalezas" name="otrasFortalezas" rows="2"></textarea>
+                </div>
+
+                <hr>
+                <h3>8. ¿CUÁL ES EL NIVEL DE COMPRENSIÓN DE LA EMPRESA ACERCA DE LAS TECNOLOGÍAS 4.0 Y LOS BENEFICIOS QUE SU IMPLEMENTACIÓN IMPLICARÍA PARA SU EMPRESA O NEGOCIO?</h3>
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <input type="radio" id="comprensionNivel1" name="nivelComprension40" value="Nivel 1">
+                        <label for="comprensionNivel1">Nivel 1: Desconocimiento Total. Desconocemos qué es la Industria 4.0 y no hemos discutido su impacto. No es un tema en nuestra agenda.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="comprensionNivel2" name="nivelComprension40" value="Nivel 2">
+                        <label for="comprensionNivel2">Nivel 2: Conciencia Básica. Hemos oído el término 'Industria 4.0', pero no entendemos cómo se aplica a nuestro negocio ni qué beneficios concretos podría traer.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="comprensionNivel3" name="nivelComprension40" value="Nivel 3">
+                        <label for="comprensionNivel3">Nivel 3: Comprensión y Motivación. Comprendemos los beneficios generales y vemos su potencial. Estamos motivados a explorar, pero aún no hemos identificado oportunidades específicas ni hemos evaluado su viabilidad en nuestra empresa.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="comprensionNivel4" name="nivelComprension40" value="Nivel 4">
+                        <label for="comprensionNivel4">Nivel 4: Análisis y Planificación. Hemos analizado nuestro negocio y hemos identificado oportunidades claras donde la tecnología 4.0 podría generar valor. Estamos en fase de planificación o desarrollando una hoja de ruta.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="comprensionNivel5" name="nivelComprension40" value="Nivel 5">
+                        <label for="comprensionNivel5">Nivel 5: Implementación Estratégica. Ya tenemos una estrategia definida y estamos ejecutando proyectos piloto o implementaciones de tecnologías 4.0 en áreas específicas de la empresa.</label>
+                    </div>
+                </div>
+
+                <hr>
+                <h3>9. ¿LA EMPRESA POSEE UN ÁREA DE TECNOLOGÍA DE LA INFORMACIÓN RESPONSABLE DE LOS EQUIPOS Y SISTEMAS INFORMÁTICOS?</h3>
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <input type="radio" id="areaTiInterno" name="areaTi" value="Si, interno">
+                        <label for="areaTiInterno">Sí, interno</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="areaTiExterno" name="areaTi" value="Si, externo (tercerizado)">
+                        <label for="areaTiExterno">Sí, externo (tercerizado)</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="areaTiAmbos" name="areaTi" value="Si, ambos">
+                        <label for="areaTiAmbos">Sí, ambos</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="areaTiNo" name="areaTi" value="No">
+                        <label for="areaTiNo">No</label>
+                    </div>
+                </div>
+
+                <hr>
+                <h3>10. ¿CÓMO DESCRIBIRÍA EL USO DE DATOS EN EL PROCESO DE TOMA DE DECISIONES DE SU EMPRESA?</h3>
+                <p>(Seleccione el nivel que mejor represente su realidad actual)</p>
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <input type="radio" id="usoDatosNivel1" name="usoDatosDecision" value="Nivel 1">
+                        <label for="usoDatosNivel1">Nivel 1: Basado en la Intuición (Reactivo). Las decisiones se basan casi exclusivamente en la experiencia, la intuición y la tradición. Los datos, si se usan, son anecdóticos o se consultan de forma esporádica para confirmar una opinión ya formada.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="usoDatosNivel2" name="usoDatosDecision" value="Nivel 2">
+                        <label for="usoDatosNivel2">Nivel 2: Informado por Datos (Descriptivo). Utilizamos reportes básicos (ventas, producción, etc.) para entender 'qué pasó'. Los datos se revisan con cierta regularidad, pero no existe un análisis profundo para entender las causas raíz.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="usoDatosNivel3" name="usoDatosDecision" value="Nivel 3">
+                        <label for="usoDatosNivel3">Nivel 3: Guiado por Datos (Diagnóstico). Analizamos sistemáticamente los datos para entender 'por qué pasó'. Las decisiones estratégicas importantes se respaldan con evidencia y análisis. Contamos con personas o herramientas dedicadas a interpretar la información.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="usoDatosNivel4" name="usoDatosDecision" value="Nivel 4">
+                        <label for="usoDatosNivel4">Nivel 4: Data-Driven (Predictivo y Prescriptivo). Los datos son un activo estratégico central. Los usamos no solo para entender el pasado, sino para predecir tendencias futuras y prescribir acciones. La cultura fomenta la experimentación y el aprendizaje constante basado en datos.</label>
+                    </div>
+                </div>
+
+                <hr>
+                <h3>11. REGISTROS E INDICADORES</h3>
+                <p>Instrucciones: Para cada área funcional clave, marque con un (X) en la fila celeste el nivel que mejor describe cómo su empresa recopila, analiza y utiliza los datos para la toma de decisiones.</p>
+                <div class="table-container">
+                    <table class="registros-indicadores-table">
+                        <thead>
+                            <tr>
+                                <th>Área Funcional</th>
+                                <th>Nivel 0: Sin Medición</th>
+                                <th>Nivel 1: Registro Manual y Reactivo</th>
+                                <th>Nivel 2: Reportes Estructurados</th>
+                                <th>Nivel 3: Dashboards y Análisis en Tiempo Real</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Producción y Operaciones</td>
+                                <td><input type="radio" name="produccionIndicadores" value="Nivel 0"> No se miden sistemáticamente los KPIs de producción.</td>
+                                <td><input type="radio" name="produccionIndicadores" value="Nivel 1"> Se registran datos básicos (ej. unidades producidas) en planillas o papel, principalmente para control histórico.</td>
+                                <td><input type="radio" name="produccionIndicadores" value="Nivel 2"> Se generan reportes periódicos (semanal/mensual) sobre eficiencia, tiempos de ciclo, etc., para análisis posterior.</td>
+                                <td><input type="radio" name="produccionIndicadores" value="Nivel 3"> Se monitorean KPIs en dashboards en vivo. Las alertas automáticas notifican desviaciones y permiten una acción inmediata.</td>
+                            </tr>
+                            <tr>
+                                <td>Calidad</td>
+                                <td><input type="radio" name="calidadIndicadores" value="Nivel 0"> No hay indicadores formales de calidad. Se actúa solo ante quejas de clientes.</td>
+                                <td><input type="radio" name="calidadIndicadores" value="Nivel 1"> Se registran defectos o reprocesos de forma manual cuando ocurren, pero sin un análisis de tendencias.</td>
+                                <td><input type="radio" name="calidadIndicadores" value="Nivel 2"> Se elaboran informes de calidad con análisis de causas raíz, pero con demora.</td>
+                                <td><input type="radio" name="calidadIndicadores" value="Nivel 3"> Los datos de calidad se visualizan en tiempo real, permitiendo identificar patrones y prevenir problemas antes de que impacten al cliente.</td>
+                            </tr>
+                            <tr>
+                                <td>Mantenimiento</td>
+                                <td><input type="radio" name="mantenimientoIndicadores" value="Nivel 0"> Las reparaciones son puramente correctivas (cuando algo se rompe).</td>
+                                <td><input type="radio" name="mantenimientoIndicadores" value="Nivel 1"> Se lleva un registro manual de las paradas de máquina y reparaciones realizadas.</td>
+                                <td><input type="radio" name="mantenimientoIndicadores" value="Nivel 2"> Se analizan los datos históricos de fallas para planificar un mantenimiento preventivo básico.</td>
+                                <td><input type="radio" name="mantenimientoIndicadores" value="Nivel 3"> Se usan sensores (IoT) o sistemas para monitorear la salud de los equipos y predecir fallas (mantenimiento predictivo).</td>
+                            </tr>
+                            <tr>
+                                <td>Inventario y Logística</td>
+                                <td><input type="radio" name="inventarioIndicadores" value="Nivel 0"> El control de stock es visual o se basa en la intuición.</td>
+                                <td><input type="radio" name="inventarioIndicadores" value="Nivel 1"> Los movimientos de stock se registran manualmente, con conciliaciones periódicas que revelan discrepancias.</td>
+                                <td><input type="radio" name="inventarioIndicadores" value="Nivel 2"> Se usan sistemas (ej. ERP) para generar reportes de rotación de stock y niveles de inventario.</td>
+                                <td><input type="radio" name="inventarioIndicadores" value="Nivel 3"> El stock se gestiona en tiempo real con sistemas integrados a la demanda, optimizando los niveles y el cumplimiento de entregas.</td>
+                            </tr>
+                            <tr>
+                                <td>Ventas y Marketing</td>
+                                <td><input type="radio" name="ventasIndicadores" value="Nivel 0"> Las ventas se miden por el resultado final (facturación), sin analizar el proceso.</td>
+                                <td><input type="radio" name="ventasIndicadores" value="Nivel 1"> Se registran datos de clientes y ventas en planillas o un CRM básico, con poco análisis del embudo de ventas.</td>
+                                <td><input type="radio" name="ventasIndicadores" value="Nivel 2"> Se crean reportes de ventas por producto, región, etc. y se mide la satisfacción del cliente de forma periódica.</td>
+                                <td><input type="radio" name="ventasIndicadores" value="Nivel 3"> Se analizan en tiempo real los KPIs del embudo de ventas y el comportamiento del cliente para personalizar ofertas y optimizar campañas.</td>
+                            </tr>
+                            <tr>
+                                <td>Finanzas y Costos</td>
+                                <td><input type="radio" name="finanzasIndicadores" value="Nivel 0"> Se enfoca en la contabilidad fiscal, sin una visión clara de la rentabilidad por producto/cliente.</td>
+                                <td><input type="radio" name="finanzasIndicadores" value="Nivel 1"> Se registran costos de forma manual, dificultando el cálculo preciso de la rentabilidad.</td>
+                                <td><input type="radio" name="finanzasIndicadores" value="Nivel 2"> Se generan informes financieros estándar (P&L, Balance), pero con dificultad para desglosar costos operativos.</td>
+                                <td><input type="radio" name="finanzasIndicadores" value="Nivel 3"> Se tienen dashboards financieros que muestran la rentabilidad en tiempo real y permiten simular el impacto de decisiones operativas.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor11">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor11" name="observacionesConsultor11" rows="2"></textarea>
+                </div>
+
+                <hr>
+                <h3>12. ¿CUÁL ES EL NIVEL DE ESTANDARIZACIÓN DE LOS PROCESOS CLAVE DE SU EMPRESA?</h3>
+                <p>Instrucciones: Seleccione el nivel que mejor describe la realidad de su organización.</p>
+                <div class="form-group">
+                    <div class="form-group-radio">
+                        <input type="radio" id="estandarizacionNivel1" name="nivelEstandarizacion" value="Nivel 1">
+                        <label for="estandarizacionNivel1">Nivel 1: Ad-Hoc y Dependiente de Personas. Los procesos dependen del conocimiento y la experiencia de personas específicas ('conocimiento tribal'). No existen procedimientos documentados y la forma de trabajar varía significativamente entre los empleados, generando resultados inconsistentes.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="estandarizacionNivel2" name="nivelEstandarizacion" value="Nivel 2">
+                        <label for="estandarizacionNivel2">Nivel 2: Documentado pero Inconsistente. Existen algunos documentos (procedimientos, diagramas), pero a menudo están desactualizados, son de difícil acceso o no se siguen de manera consistente. La estandarización es parcial y se aplica solo a ciertas áreas o tareas.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="estandarizacionNivel3" name="nivelEstandarizacion" value="Nivel 3">
+                        <label for="estandarizacionNivel3">Nivel 3: Estandarizado y Gestionado. La mayoría de los procesos críticos están documentados, actualizados y son accesibles para todos (ej. en una intranet o sistema de gestión). Se utilizan activamente para la capacitación y como base para el trabajo diario. Existe un método para revisarlos y mejorarlos.</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="estandarizacionNivel4" name="nivelEstandarizacion" value="Nivel 4">
+                        <label for="estandarizacionNivel4">Nivel 4: Digitalizado y Optimizado. Los procesos estándar están integrados en nuestras herramientas digitales (ERP, CRM, BPM). Los flujos de trabajo guían a los usuarios, se recopilan datos automáticamente sobre el rendimiento del proceso y se utilizan para la mejora continua y la automatización.</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="observacionesConsultor12">Observaciones por parte del consultor:</label>
+                    <textarea id="observacionesConsultor12" name="observacionesConsultor12" rows="2"></textarea>
+                </div>
+
+                <hr>
+                <h3>13. IDENTIFIQUE EL GRADO EN EL QUE LA EMPRESA HA DIGITALIZADO PROCESOS Y DOCUMENTOS INTERNOS</h3>
+                <div class="form-group-radio-inline">
+                    <label>13.1 Gestión administrativa:</label>
+                    <input type="radio" id="admNulo" name="gestionAdministrativa" value="Nulo"><label for="admNulo">Nulo</label>
+                    <input type="radio" id="admBajo" name="gestionAdministrativa" value="Bajo"><label for="admBajo">Bajo</label>
+                    <input type="radio" id="admMedio" name="gestionAdministrativa" value="Medio"><label for="admMedio">Medio</label>
+                    <input type="radio" id="admAlto" name="gestionAdministrativa" value="Alto"><label for="admAlto">Alto</label>
+                </div>
+                <div class="form-group-radio-inline">
+                    <label>13.2 Gestión de la producción:</label>
+                    <input type="radio" id="prodNulo" name="gestionProduccion" value="Nulo"><label for="prodNulo">Nulo</label>
+                    <input type="radio" id="prodBajo" name="gestionProduccion" value="Bajo"><label for="prodBajo">Bajo</label>
+                    <input type="radio" id="prodMedio" name="gestionProduccion" value="Medio"><label for="prodMedio">Medio</label>
+                    <input type="radio" id="prodAlto" name="gestionProduccion" value="Alto"><label for="prodAlto">Alto</label>
+                </div>
+                <div class="form-group-radio-inline">
+                    <label>13.3 Diseño de producto:</label>
+                    <input type="radio" id="disNulo" name="disenoProducto" value="Nulo"><label for="disNulo">Nulo</label>
+                    <input type="radio" id="disBajo" name="disenoProducto" value="Bajo"><label for="disBajo">Bajo</label>
+                    <input type="radio" id="disMedio" name="disenoProducto" value="Medio"><label for="disMedio">Medio</label>
+                    <input type="radio" id="disAlto" name="disenoProducto" value="Alto"><label for="disAlto">Alto</label>
+                </div>
+
+                <hr>
+                <h3>14. IDENTIFIQUE LAS PRINCIPALES APLICACIONES DE AUTOMATIZACIÓN, ROBÓTICA E INTELIGENCIA ARTIFICIAL QUE ACTUALMENTE APLICA EN SU EMPRESA.</h3>
+                <p>Instrucciones: Para cada una de las siguientes tecnologías, marque con una (X) el nivel de adopción actual en su empresa.</p>
+
+                <div class="table-container">
+                    <table class="adopcion-tecnologia-table">
+                        <thead>
+                            <tr>
+                                <th>Tecnología / Aplicación</th>
+                                <th>No la usamos ni consideramos</th>
+                                <th>Estamos evaluando o explorando su uso</th>
+                                <th>Tenemos un proyecto piloto en marcha</th>
+                                <th>Implementado en áreas específicas</th>
+                                <th>Implementado a gran escala / Esencial para la operación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="6"><strong>A. AUTOMATIZACIÓN Y ROBÓTICA</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Robots Industriales (Brazos robóticos para soldadura, pintura, ensamblaje, etc.)</td>
+                                <td><input type="radio" name="robotsIndustriales" value="Nivel 0"></td>
+                                <td><input type="radio" name="robotsIndustriales" value="Nivel 1"></td>
+                                <td><input type="radio" name="robotsIndustriales" value="Nivel 2"></td>
+                                <td><input type="radio" name="robotsIndustriales" value="Nivel 3"></td>
+                                <td><input type="radio" name="robotsIndustriales" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Robots Colaborativos (Cobots) (Trabajan junto a humanos en tareas compartidas)</td>
+                                <td><input type="radio" name="robotsColaborativos" value="Nivel 0"></td>
+                                <td><input type="radio" name="robotsColaborativos" value="Nivel 1"></td>
+                                <td><input type="radio" name="robotsColaborativos" value="Nivel 2"></td>
+                                <td><input type="radio" name="robotsColaborativos" value="Nivel 3"></td>
+                                <td><input type="radio" name="robotsColaborativos" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Vehículos Guiados Autónomos (AGVs) (Para transporte interno de materiales)</td>
+                                <td><input type="radio" name="agvs" value="Nivel 0"></td>
+                                <td><input type="radio" name="agvs" value="Nivel 1"></td>
+                                <td><input type="radio" name="agvs" value="Nivel 2"></td>
+                                <td><input type="radio" name="agvs" value="Nivel 3"></td>
+                                <td><input type="radio" name="agvs" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Automatización Robótica de Procesos (RPA) (Software para automatizar tareas administrativas repetitivas)</td>
+                                <td><input type="radio" name="rpa" value="Nivel 0"></td>
+                                <td><input type="radio" name="rpa" value="Nivel 1"></td>
+                                <td><input type="radio" name="rpa" value="Nivel 2"></td>
+                                <td><input type="radio" name="rpa" value="Nivel 3"></td>
+                                <td><input type="radio" name="rpa" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Otros: Describa</td>
+                                <td colspan="5"><input type="text" name="otrasAutomatizacionTexto"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><strong>B. INTELIGENCIA ARTIFICIAL (IA) Y DATOS</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Análisis Predictivo (Para predecir demanda, mantenimiento de máquinas, etc.)</td>
+                                <td><input type="radio" name="analisisPredictivo" value="Nivel 0"></td>
+                                <td><input type="radio" name="analisisPredictivo" value="Nivel 1"></td>
+                                <td><input type="radio" name="analisisPredictivo" value="Nivel 2"></td>
+                                <td><input type="radio" name="analisisPredictivo" value="Nivel 3"></td>
+                                <td><input type="radio" name="analisisPredictivo" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Visión por Computadora (Para control de calidad automático, seguridad, etc.)</td>
+                                <td><input type="radio" name="visionComputadora" value="Nivel 0"></td>
+                                <td><input type="radio" name="visionComputadora" value="Nivel 1"></td>
+                                <td><input type="radio" name="visionComputadora" value="Nivel 2"></td>
+                                <td><input type="radio" name="visionComputadora" value="Nivel 3"></td>
+                                <td><input type="radio" name="visionComputadora" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Chatbots / Asistentes Virtuales (Para atención al cliente o soporte interno)</td>
+                                <td><input type="radio" name="chatbots" value="Nivel 0"></td>
+                                <td><input type="radio" name="chatbots" value="Nivel 1"></td>
+                                <td><input type="radio" name="chatbots" value="Nivel 2"></td>
+                                <td><input type="radio" name="chatbots" value="Nivel 3"></td>
+                                <td><input type="radio" name="chatbots" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Optimización por IA (Para optimizar rutas de logística, planificación de producción, etc.)</td>
+                                <td><input type="radio" name="optimizacionIA" value="Nivel 0"></td>
+                                <td><input type="radio" name="optimizacionIA" value="Nivel 1"></td>
+                                <td><input type="radio" name="optimizacionIA" value="Nivel 2"></td>
+                                <td><input type="radio" name="optimizacionIA" value="Nivel 3"></td>
+                                <td><input type="radio" name="optimizacionIA" value="Nivel 4"></td>
+                            </tr>
+                            <tr>
+                                <td>Otros: Describa</td>
+                                <td colspan="5"><input type="text" name="otrasIaTexto"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-group-fieldset">
+                    <fieldset>
+                        <legend><h4>14.1 Si marcó algo más allá de "No la usamos", ¿cuáles son los principales objetivos que persigue con estas tecnologías? (Marque hasta 3)</h4></legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Reducir costos operativos"> Reducir costos operativos</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Aumentar la productividad y eficiencia"> Aumentar la productividad y eficiencia</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Mejorar la calidad y consistencia del producto/servicio"> Mejorar la calidad y consistencia del producto/servicio</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Mejorar la experiencia del cliente (CX)"> Mejorar la experiencia del cliente (CX)</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Aumentar la seguridad de los trabajadores"> Aumentar la seguridad de los trabajadores</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Agilizar y mejorar la toma de decisiones"> Agilizar y mejorar la toma de decisiones</label>
+                            <label><input type="checkbox" name="objetivosTecnologia" value="Crear nuevas fuentes de ingreso o modelos de negocio"> Crear nuevas fuentes de ingreso o modelos de negocio</label>
+                            <label>
+                                <input type="checkbox" name="objetivosTecnologia" value="Otro"> Otro (describa):
+                                <input type="text" name="objetivosTecnologiaOtroTexto">
+                            </label>
                         </div>
                     </fieldset>
                 </div>
@@ -271,23 +941,47 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const inputs = document.querySelectorAll('.estructura-empresa-table input[type="number"]');
-            const totalSpan = document.getElementById('totalEmpleadosEstructura');
+            const cantidadInputs = document.querySelectorAll('.estructura-empresa-table tbody input[type="number"][name$="Cantidad"]');
+            const totalPersonasSpan = document.getElementById('totalPersonas');
+            const percentInputs = document.querySelectorAll('.estructura-empresa-table tbody input[type="number"][name$="Masculino"], .estructura-empresa-table tbody input[type="number"][name$="Femenino"]');
 
-            function updateTotal() {
+            function updateTotalPersonas() {
                 let total = 0;
-                inputs.forEach(input => {
+                cantidadInputs.forEach(input => {
                     total += parseInt(input.value) || 0;
                 });
-                totalSpan.textContent = total;
+                totalPersonasSpan.textContent = total;
             }
 
-            inputs.forEach(input => {
-                input.addEventListener('input', updateTotal);
+            function validateGenderPercentage(event) {
+                const row = event.target.closest('tr');
+                const masculinoInput = row.querySelector('input[name$="Masculino"]');
+                const femeninoInput = row.querySelector('input[name$="Femenino"]');
+
+                let masculinoVal = parseFloat(masculinoInput.value) || 0;
+                let femeninoVal = parseFloat(femeninoInput.value) || 0;
+
+                // Ensure sum is not more than 100
+                if (masculinoVal + femeninoVal > 100) {
+                    if (event.target === masculinoInput) {
+                        femeninoInput.value = (100 - masculinoVal).toFixed(2);
+                    } else {
+                        masculinoInput.value = (100 - femeninoVal).toFixed(2);
+                    }
+                }
+            }
+
+            cantidadInputs.forEach(input => {
+                input.addEventListener('input', updateTotalPersonas);
             });
 
-            // Inicializar el total al cargar la página
-            updateTotal();
+            percentInputs.forEach(input => {
+                input.addEventListener('input', validateGenderPercentage);
+            });
+
+            // Initial calculations
+            updateTotalPersonas();
+            // No need to call validateGenderPercentage initially as values are 0.00
         });
     </script>
 </body>
