@@ -537,3 +537,94 @@ table tfoot td {
         padding: 4px !important;
     }
 }
+
+/* Estilos para las Secciones Colapsables (Acordeón) */
+.form-section-collapsible {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: var(--spacing-md);
+    overflow: hidden; /* Asegura que el contenido oculto no se desborde */
+    background-color: var(--card-background); /* Fondo para la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.form-section-collapsible .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px var(--spacing-md);
+    background-color: var(--primary-color); /* Color de fondo del encabezado */
+    color: white; /* Texto blanco para el encabezado */
+    cursor: pointer;
+    font-family: var(--font-family-secondary);
+    font-size: 1.8em; /* Ajusta el tamaño de fuente si el h2 ya es muy grande */
+    font-weight: 600;
+    border-bottom: none; /* Elimina el borde inferior de los h2 dentro del header */
+    margin-bottom: 0; /* Elimina el margen inferior de los h2 */
+}
+
+.form-section-collapsible .section-header h2,
+.form-section-collapsible .section-header h3 {
+    color: white; /* Asegura que los títulos internos sean blancos */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    border-bottom: none; /* Asegura que no haya borde debajo de los h2/h3 aquí */
+    font-size: 1.4em; /* Ajusta el tamaño de fuente dentro del encabezado colapsable */
+    line-height: 1.2;
+}
+
+.form-section-collapsible .section-header .toggle-icon {
+    font-size: 2em; /* Tamaño del icono */
+    font-weight: bold;
+    margin-left: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+/* Opcional: Rotar el icono para indicar estado (no necesario si solo usas + y -) */
+/* .form-section-collapsible.open .section-header .toggle-icon {
+    transform: rotate(90deg);
+} */
+
+.form-section-collapsible .section-content {
+    padding: var(--spacing-md);
+    padding-top: 0; /* Elimina el padding top si el contenido ya tiene margen */
+    display: block; /* Por defecto, visible, JavaScript lo ocultará */
+    transition: all 0.3s ease-out; /* Transición suave para expandir/contraer (experimental con display) */
+}
+
+/* Asegura que el hr se vea bien si está dentro de section-content */
+.form-section-collapsible .section-content hr {
+    margin: var(--spacing-md) 0; /* Menos margen vertical para los HR dentro de las secciones colapsables */
+}
+
+/* Media Queries para los encabezados colapsables */
+@media (max-width: 768px) {
+    .form-section-collapsible .section-header {
+        padding: 12px var(--spacing-sm);
+        font-size: 1.4em; /* Ajuste para móviles */
+    }
+    .form-section-collapsible .section-header h2,
+    .form-section-collapsible .section-header h3 {
+        font-size: 1.2em;
+    }
+    .form-section-collapsible .section-header .toggle-icon {
+        font-size: 1.8em;
+    }
+    .form-section-collapsible .section-content {
+        padding: var(--spacing-sm);
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section-collapsible .section-header {
+        font-size: 1.2em;
+    }
+    .form-section-collapsible .section-header h2,
+    .form-section-collapsible .section-header h3 {
+        font-size: 1em;
+    }
+    .form-section-collapsible .section-header .toggle-icon {
+        font-size: 1.5em;
+    }
+}
