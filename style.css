@@ -16,421 +16,410 @@
     --table-row-hover: #f8f9fa; /* Fondo para filas de tabla al pasar el ratón */
     --font-family-primary: 'Roboto', sans-serif; /* Fuente moderna */
     --font-family-secondary: 'Montserrat', sans-serif; /* Fuente para títulos */
+
+    /* Nuevas variables para espaciado (opcional, pero útil para consistencia) */
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
 }
 
-/* Importar fuentes de Google Fonts (puedes añadir esto al <head> de tu HTML también) */
+/* Importar fuentes de Google Fonts (ya está en tu HTML, pero es buena práctica tener el @import aquí también si no estuviera) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap');
 
-
-/* Estilos generales del cuerpo */
+/* Estilos Generales */
 body {
     font-family: var(--font-family-primary);
-    line-height: 1.6;
+    line-height: 1.6; /* Ligeramente aumentado para mejor legibilidad */
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alinea al inicio verticalmente */
-    min-height: 100vh; /* Ocupa al menos el alto de la ventana */
-    padding-top: 40px; /* Espacio superior para que el contenedor no pegue arriba */
-    padding-bottom: 40px; /* Espacio inferior */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Contenedor principal para centrar el contenido */
 .container {
-    width: 90%;
-    max-width: 960px; /* Ancho máximo para legibilidad */
-    margin: 0 auto; /* Centrado horizontal */
-    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: var(--spacing-lg); /* Usando la variable de espaciado */
     background-color: var(--card-background);
-    border-radius: 12px; /* Bordes más redondeados */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada y suave */
-    box-sizing: border-box; /* Incluye padding y border en el ancho/alto */
+    border-radius: 12px; /* Ligeramente más redondeado */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
 }
 
-/* Encabezado principal */
+/* Encabezados y títulos */
 header {
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 25px;
-    border-bottom: 2px solid var(--border-color);
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-color); /* Borde más grueso */
 }
 
 header h1 {
-    color: var(--primary-color);
     font-family: var(--font-family-secondary);
-    font-size: 2.5em; /* Tamaño de fuente un poco más grande */
+    color: var(--primary-color);
+    font-size: 2.8em;
     margin-bottom: 10px;
-    font-weight: 700; /* Negrita para títulos */
-    letter-spacing: -0.5px; /* Ajuste para un look más moderno */
+    line-height: 1.2;
 }
 
-/* Secciones de contenido */
 section {
-    margin-bottom: 35px;
+    margin-bottom: var(--spacing-lg); /* Más espacio entre secciones */
+    padding-top: var(--spacing-md);
 }
 
 section h2 {
-    color: var(--secondary-color);
     font-family: var(--font-family-secondary);
-    font-size: 2em; /* Tamaño de fuente un poco más grande */
-    margin-bottom: 20px;
-    border-left: 6px solid var(--primary-color); /* Borde más grueso */
-    padding-left: 15px;
-    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 2.2em;
+    margin-bottom: var(--spacing-md); /* Más espacio debajo de los títulos de sección */
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-section h3, section h4 {
-    color: var(--text-color);
+section h3 {
     font-family: var(--font-family-secondary);
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 section h4 {
+    font-family: var(--font-family-secondary);
+    color: var(--text-color);
     font-size: 1.3em;
-    margin-top: 25px;
+    margin-top: var(--spacing-sm);
     margin-bottom: 10px;
-    color: var(--primary-color);
 }
 
-
-p {
-    margin-bottom: 18px;
-    font-size: 1.15em; /* Tamaño de fuente ligeramente más grande */
-    line-height: 1.7; /* Mayor espacio entre líneas para legibilidad */
+p, ul li {
+    margin-bottom: 15px;
+    line-height: 1.7; /* Ligeramente aumentado para párrafos y listas */
 }
 
-p.instruction {
-    font-style: italic;
-    font-size: 1em;
-    color: #666;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-/* Listas (para Responsables del Proyecto) */
 ul {
-    list-style-type: none; /* Remueve los puntos por defecto */
+    list-style: disc;
+    margin-left: 20px;
     padding: 0;
 }
 
 ul li {
-    background-color: var(--light-grey);
-    margin-bottom: 10px;
-    padding: 15px 20px;
-    border-radius: 8px; /* Bordes más redondeados para los ítems de lista */
-    font-size: 1.1em;
-    display: flex;
-    align-items: flex-start; /* Alinea el texto al inicio si hay varias líneas */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil para cada ítem */
-    transition: transform 0.2s ease-in-out; /* Animación al pasar el ratón */
+    margin-bottom: 8px;
 }
 
-ul li:hover {
-    transform: translateY(-3px); /* Efecto de "levantamiento" al pasar el ratón */
+/* Líneas de separación (HR) - MEJORADO */
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color); /* Un borde más suave */
+    margin: var(--spacing-lg) 0; /* Más espacio arriba y abajo */
+    /* Efecto degradado opcional */
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    height: 1px;
 }
 
-ul li::before {
-    content: '→'; /* Flecha como viñeta personalizada */
-    color: var(--primary-color);
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5em; /* Ajusta el ancho de la viñeta */
-    margin-left: -1.5em;
-    margin-right: 0.8em;
-    font-size: 1.2em; /* Tamaño de la flecha */
-}
-
-/* Estilos para el formulario */
+/* Estilos de Formulario */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espacio entre grupos de formulario */
+    background-color: var(--card-background);
+    padding: 0; /* Ya no es necesario padding aquí, el container lo maneja */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); Eliminado, el container ya tiene una sombra */
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: var(--spacing-md); /* Consistencia en el espaciado */
+    padding: 0 10px; /* Un poco de padding horizontal para los grupos si es necesario */
 }
 
 .form-group label {
-    font-weight: 500;
+    display: block;
     margin-bottom: 8px;
-    color: var(--text-color);
-    font-size: 1.05em;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group input[type="url"],
-.form-group input[type="number"],
-.form-group input[type="date"],
-.form-group textarea,
-.form-group select {
-    padding: 12px 15px;
-    border: 1px solid var(--form-border);
-    border-radius: 6px;
-    font-size: 1em;
-    font-family: var(--font-family-primary);
-    color: var(--text-color);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho */
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--focus-border);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
-    outline: none; /* Remueve el contorno por defecto */
-}
-
-.maturity-table .maturity-description {
-    white-space: pre-wrap; /* Mantiene los saltos de línea y el espaciado original */
-    text-align: left; /* Asegura que el texto dentro del div se alinee a la izquierda */
-    font-size: 0.85em; /* Ajusta el tamaño de fuente si es necesario para que quepa bien */
-    max-height: 200px; /* Limita la altura para evitar que las celdas sean demasiado altas */
-    overflow-y: auto; /* Agrega scroll si el contenido excede la altura máxima */
-    padding: 5px; /* Pequeño padding interno */
-    border-left: 2px solid var(--primary-color); /* Una pequeña línea para destacarlo */
-    margin: 0; /* Elimina márgenes por defecto */
-}
-
-/* Opcional: Estilo para la fila de promedio */
-.maturity-table .table-summary-row td {
-    background-color: var(--secondary-background-color); /* Un color de fondo diferente para el promedio */
-    font-weight: bold;
-}
-
-/* Estilo adicional para inputs numéricos pequeños en tablas */
-table input[type="number"].narrow-input {
-    width: 60px; /* Ancho fijo para números pequeños */
-    text-align: center;
-    padding: 6px; /* Ajustar padding */
-}
-
-/* En caso de que necesites ajustar el tamaño general de los inputs en tablas, aunque ya tienes reglas generales */
-table input[type="text"],
-table input[type="number"],
-table select {
-    /* Tus estilos ya definidos aquí: */
-    /* width: 100%; */
-    /* padding: 8px; */
-    /* border: 1px solid var(--form-border); */
-    /* border-radius: 4px; */
-    /* box-sizing: border-box; */
-}
-
-/* Estilos para radio buttons (Se realizó reunión/visita) */
-.form-group-radio {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-}
-
-.form-group-radio label {
-    margin-bottom: 0; /* No hay margen inferior para estas etiquetas */
-    margin-right: 15px; /* Espacio entre la pregunta y los radios */
     font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* Campos de entrada, select, textarea - MEJORADO */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 20px); /* Ajuste para el padding si se añade */
+    padding: 12px 10px; /* Mayor padding para mejor clicabilidad y legibilidad */
+    border: 1px solid var(--form-border);
+    border-radius: 6px; /* Ligeramente más redondeado */
+    font-size: 1.05em; /* Un poco más grande */
     color: var(--text-color);
-    white-space: nowrap; /* Evita que la etiqueta se rompa en varias líneas */
+    background-color: #fff;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
 
-.form-group-radio input[type="radio"] {
-    margin-right: 5px;
-    margin-left: 10px; /* Espacio entre el radio y su etiqueta */
-    accent-color: var(--primary-color); /* Color del radio button */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--focus-border);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave al enfocar */
+    outline: none; /* Elimina el contorno por defecto del navegador */
 }
 
-.form-group-radio label[for] { /* Estilo para las etiquetas "Sí" y "No" */
-    font-weight: 400; /* Menos negrita que la pregunta principal */
-    margin-right: 20px;
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-/* Estilos para fieldset y legend (para agrupar radios/checkboxes) */
-fieldset.form-group-fieldset {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Grupos de Radio y Checkbox - MEJORADO */
+.form-group-radio,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+    gap: var(--spacing-md); /* Espacio entre los grupos de radio/checkbox */
+    margin-bottom: var(--spacing-md); /* Espacio debajo del grupo */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0 10px; /* Padding para consistencia */
 }
 
-fieldset.form-group-fieldset legend {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: var(--primary-color);
-    padding: 0 10px;
-    margin-bottom: 15px;
-}
-
+.form-group-radio label,
 .checkbox-group label {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    font-size: 1em;
-    font-weight: 400; /* Menos negrita para las opciones */
-    line-height: 1.5;
-    cursor: pointer;
-}
-
-.checkbox-group input[type="checkbox"],
-.checkbox-group input[type="radio"] {
-    margin-right: 10px;
-    margin-top: 4px; /* Alinea el checkbox/radio con la primera línea de texto */
-    flex-shrink: 0; /* Evita que el input se encoja */
-    accent-color: var(--primary-color);
-}
-
-.checkbox-group input[type="text"] { /* Para el campo "Otra: Describa" dentro de un checkbox */
-    margin-left: 10px;
-    flex-grow: 1;
-    padding: 8px 10px;
-    border-radius: 4px;
-    border: 1px solid var(--form-border);
-}
-
-
-/* Estilos para tablas */
-.table-container {
-    overflow-x: auto; /* Permite scroll horizontal en tablas grandes en móviles */
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background-color: var(--card-background);
-}
-
-table th, table td {
-    border: 1px solid var(--border-color);
-    padding: 12px;
-    text-align: left;
-    font-size: 0.95em;
-    vertical-align: middle;
-}
-
-table th {
-    background-color: var(--table-header-bg);
-    color: var(--secondary-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-table tbody tr:nth-child(odd) {
-    background-color: #fcfdff; /* Ligeramente diferente para filas impares */
-}
-
-table tbody tr:hover {
-    background-color: var(--table-row-hover);
-}
-
-table input[type="number"],
-table input[type="text"],
-table select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid var(--form-border);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-table input[type="radio"] {
-    margin-right: 5px;
-    accent-color: var(--primary-color);
-}
-
-/* Específicos para la tabla de comunicación interna (radio buttons inline) */
-.comunicacion-table td:nth-child(2) { /* Columna de ¿Se utiliza? */
-    white-space: nowrap; /* Evita que Sí/No se rompa */
-}
-.comunicacion-table td:nth-child(2) label {
-    margin-right: 10px; /* Espacio entre Sí/No */
-    display: inline-flex;
     align-items: center;
+    cursor: pointer;
+    font-size: 1em; /* Asegura un tamaño de fuente legible */
+    color: var(--text-color);
+    margin-bottom: 0; /* Resetea el margen inferior de label para flexbox */
 }
 
-
-/* Estilos para el pie de la tabla de Estructura de la Empresa */
-table tfoot td {
-    font-weight: 600;
-    background-color: var(--light-grey);
-    border-top: 2px solid var(--primary-color);
+.form-group-radio input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px; /* Espacio entre el input y el texto */
+    transform: scale(1.1); /* Ligeramente más grandes para mayor clicabilidad */
+    accent-color: var(--primary-color); /* Color de acento para radios/checkbox */
+    width: auto; /* Asegura que no tome el 100% de ancho */
+    padding: 0; /* Resetea padding */
+    border: none; /* Resetea bordes */
+    box-shadow: none; /* Resetea sombra */
 }
-table tfoot span {
-    display: block; /* Asegura que el span ocupe su propio espacio */
-    padding: 5px 0;
-}
 
-/* Radio buttons en línea para Digitalización de Procesos */
+/* Estilos de Radio Inline (cuando se usa esa clase) */
 .form-group-radio-inline {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 15px; /* Espacio entre cada opción de radio */
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: var(--light-grey);
-    border-radius: 8px;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
 }
 
 .form-group-radio-inline label {
-    margin-bottom: 0;
-    font-weight: 500;
-    white-space: nowrap;
+    margin-right: 15px; /* Espacio entre las opciones radio inline */
+    display: flex; /* Asegura que los radios se alineen con su texto */
+    align-items: center;
 }
 
-.form-group-radio-inline label input[type="radio"] {
-    margin-right: 5px;
+/* Campo para CUIT */
+input#cuit {
+    /* Puedes añadir estilos específicos si quieres */
 }
 
-
-/* Separador horizontal */
-hr {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin: 30px 0;
-}
-
-/* Botón de envío */
+/* Estilos de Botón de Envío - MEJORADO */
 button[type="submit"] {
+    display: block;
+    width: auto; /* Ancho automático, se ajustará al contenido */
+    margin: var(--spacing-lg) auto 0; /* Centra el botón y da más margen superior */
+    padding: 15px 30px; /* Mayor padding para un botón más prominente */
     background-color: var(--button-bg);
-    color: white;
-    padding: 15px 25px;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
+    border-radius: 8px; /* Ligeramente más redondeado */
+    font-size: 1.2em;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: center; /* Centra el botón */
-    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 button[type="submit"]:hover {
     background-color: var(--button-hover-bg);
-    transform: translateY(-2px);
+    transform: translateY(-3px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más visible */
+}
+
+button[type="submit"]:active {
+    transform: translateY(0); /* Vuelve a su posición al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Sombra más pequeña al hacer clic */
+}
+
+/* Estilos para Fieldset y Legend */
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 8px;
+    background-color: var(--light-grey); /* Un fondo suave para los fieldsets */
+}
+
+legend {
+    font-family: var(--font-family-secondary);
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding: 0 10px;
+    margin-left: -10px; /* Para alinear con el padding del fieldset */
+    background-color: var(--card-background); /* Fondo para la leyenda */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos de Tabla - MEJORADO */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Mantiene el scroll horizontal para tablas grandes */
+    margin-bottom: var(--spacing-md); /* Espacio debajo de las tablas */
+    border-radius: 8px; /* Bordes redondeados para el contenedor de la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil al contenedor */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Bordes de celdas unidos */
+    margin-top: 0; /* Sin margen superior, el contenedor lo maneja */
+    background-color: var(--card-background);
+    border-radius: 8px; /* Bordes redondeados para la tabla interna */
+    overflow: hidden; /* Asegura que la sombra y los bordes se apliquen correctamente */
+}
+
+table th,
+table td {
+    padding: 12px 15px; /* Mayor padding para legibilidad */
+    border: 1px solid var(--border-color); /* Bordes de celdas suaves */
+    text-align: left;
+    vertical-align: top; /* Alinea el contenido al principio de la celda */
+}
+
+table thead th {
+    background-color: var(--table-header-bg); /* Fondo para encabezados */
+    color: var(--secondary-color); /* Color de texto para encabezados */
+    font-weight: 600; /* Negrita para encabezados */
+    text-transform: uppercase; /* Mayúsculas para un aspecto más profesional */
+    font-size: 0.85em;
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--light-grey); /* Fondo para filas pares (cebreado) */
+}
+
+table tbody tr:hover {
+    background-color: var(--table-row-hover); /* Fondo al pasar el ratón */
+    transition: background-color 0.2s ease;
+}
+
+/* Ajustes específicos para tablas con inputs */
+.capacitacion-table select,
+.problematica-table input[type="number"],
+.comunicacion-table input[type="text"],
+.adopcion-tecnologia-table input[type="number"],
+.registros-indicadores-table input[type="number"],
+.ia-solutions-table input[type="number"] {
+    width: 100px; /* Ancho fijo para inputs numéricos o selects pequeños */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    padding: 8px 10px; /* Reducir padding para que quepa mejor en la tabla */
+    font-size: 0.9em;
+}
+
+/* Para los inputs de checkbox/radio dentro de las tablas */
+table input[type="checkbox"],
+table input[type="radio"] {
+    margin: 0 auto; /* Centrar los checkboxes en las celdas */
+    display: block; /* Asegura que margin auto funcione */
+    transform: scale(1); /* Resetear el scale si fue afectado por un estilo global */
+}
+
+/* Estilos para las descripciones de madurez en las tablas grandes */
+.maturity-description {
+    font-size: 0.85em;
+    line-height: 1.5;
+    background-color: var(--light-grey);
+    border-left: 3px solid var(--primary-color);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+/* Ajustes para el footer de la tabla de personal (TOTAL) */
+table tfoot td {
+    font-weight: bold;
+    background-color: var(--table-header-bg);
+}
+
+/* Para las "narrow-input" en las tablas grandes */
+.narrow-input {
+    width: 60px !important; /* Ajusta el ancho para inputs pequeños */
+    text-align: center;
+    padding: 8px 5px !important; /* Ajustar padding */
 }
 
 
-/* Estilos responsivos */
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .container {
+        margin: 20px auto;
+        padding: var(--spacing-md);
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section h3 {
+        font-size: 1.5em;
+    }
+
+    section h4 {
+        font-size: 1.1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    legend {
+        font-size: 1.2em;
+    }
+
+    table th,
+    table td {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        width: 95%;
-        margin: 0 auto;
-        padding: 25px;
+        margin: 15px auto;
+        padding: var(--spacing-md);
     }
 
     header h1 {
@@ -438,7 +427,7 @@ button[type="submit"]:hover {
     }
 
     section h2 {
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
 
     section h3 {
@@ -446,53 +435,23 @@ button[type="submit"]:hover {
     }
 
     section h4 {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
-    p {
-        font-size: 1em;
-    }
-
-    ul li {
-        font-size: 0.95em;
-        padding: 12px 15px;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group input[type="tel"],
-    .form-group input[type="url"],
-    .form-group input[type="number"],
-    .form-group input[type="date"],
-    .form-group textarea,
-    .form-group select {
-        padding: 10px 12px;
+    p, ul li {
         font-size: 0.95em;
     }
 
-    .form-group-radio label {
-        margin-right: 10px;
+    .form-group-radio,
+    .checkbox-group {
+        flex-direction: column; /* Apila elementos */
+        align-items: flex-start; /* Alinea a la izquierda */
+        gap: 10px; /* Menor espacio entre elementos apilados */
     }
 
-    fieldset.form-group-fieldset legend {
-        font-size: 1.1em;
-    }
-
+    .form-group-radio label,
     .checkbox-group label {
         font-size: 0.95em;
-    }
-
-    table th, table td {
-        padding: 10px;
-        font-size: 0.85em;
-    }
-
-    .adopcion-tecnologia-table th {
-        font-size: 0.75em; /* Ajuste para encabezados de tabla complejos */
-    }
-
-    .registros-indicadores-table th {
-        font-size: 0.7em;
     }
 
     .form-group-radio-inline {
@@ -500,11 +459,28 @@ button[type="submit"]:hover {
         align-items: flex-start;
         gap: 10px;
     }
+
+    .capacitacion-table th,
+    .adopcion-tecnologia-table th,
+    .registros-indicadores-table th,
+    .ia-solutions-table th {
+        font-size: 0.8em; /* Ajuste para encabezados de tabla complejos */
+    }
+    
+    .capacitacion-table select,
+    .problematica-table input[type="number"],
+    .comunicacion-table input[type="text"],
+    .adopcion-tecnologia-table input[type="number"],
+    .registros-indicadores-table input[type="number"],
+    .ia-solutions-table input[type="number"] {
+        width: 80px; /* Reducir aún más el ancho de inputs en tablas */
+        padding: 6px 8px;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 20px;
+        padding: var(--spacing-sm);
     }
 
     header h1 {
@@ -527,38 +503,37 @@ button[type="submit"]:hover {
         font-size: 0.9em;
     }
 
-    .form-group-radio {
-        flex-direction: column; /* Apila elementos en pantallas muy pequeñas */
-        align-items: flex-start;
-    }
-
     .form-group-radio label {
-        margin-bottom: 5px;
-    }
-
-    .form-group-radio input[type="radio"] {
-        margin-left: 0;
+        font-size: 0.9em;
     }
 
     .checkbox-group label {
         font-size: 0.85em;
     }
 
-    /* Tablas en móviles, forzar scroll horizontal */
-    .table-container {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* smooth scrolling en iOS */
-    }
-
-    table {
-        min-width: 600px; /* Asegura que la tabla no sea demasiado estrecha */
-    }
-    table th, table td {
-        padding: 8px;
+    table th,
+    table td {
+        padding: 8px 10px;
         font-size: 0.8em;
     }
-    .registros-indicadores-table th, .adopcion-tecnologia-table th {
-        font-size: 0.65em;
+
+    .maturity-description {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .capacitacion-table select,
+    .problematica-table input[type="number"],
+    .comunicacion-table input[type="text"],
+    .adopcion-tecnologia-table input[type="number"],
+    .registros-indicadores-table input[type="number"],
+    .ia-solutions-table input[type="number"] {
+        width: 60px; /* Ancho muy reducido para móviles */
+        padding: 4px 6px;
+    }
+
+    .narrow-input {
+        width: 50px !important;
+        padding: 4px !important;
     }
 }
